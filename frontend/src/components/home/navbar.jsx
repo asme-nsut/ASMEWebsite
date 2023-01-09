@@ -14,11 +14,13 @@ function Nav() {
             class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
             href="/"
           >
-            <img class="w-16 h-10 mt-2" src="https://i.imgur.com/6ha4cAJ.png" />
+            <img class="w-16 h-10 mt-2" src="https://i.imgur.com/6ha4cAJ.png" alt="asme logo"/>
           </a>
 
           <div class={`${open ? "hidden" : "md:hidden"}`}>
             <div class="flex flex-col mr-1">
+
+            <hr></hr>
               <a class="mr-5 text-xl hover:text-gray-900" href="/">
                 Home
               </a>
@@ -29,6 +31,8 @@ function Nav() {
                 Gallery
               </a>
             </div>
+
+          <hr></hr>
 
             <div>
               <button class="hidden md:inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 md:visible ">
