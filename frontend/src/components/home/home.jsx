@@ -147,9 +147,6 @@ function home() {
 </section>
 
 
-{/* ************************* Footer ********************** */}
-
-    <Footer></Footer>
     </div>
   )
 }
