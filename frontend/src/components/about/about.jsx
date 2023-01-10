@@ -93,24 +93,24 @@ function about() {
 
   return (
     <div><div class='scroll-smooth'>  
-      <button class='gotostu bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center fixed bottom-4 transition-all ease-in-out duratoin-1000 left-[-9.50rem]  hover:left-0 ' onClick={scrollstu}>
-        <span class='mx-4 text-lg'>Go to Student </span>
+      <button class='gotostu bg-[#0C397D] text-white font-bold py-2 px-4 rounded inline-flex items-center fixed bottom-4 transition-all ease-in-out duration-800 left-[-9.75rem]  hover:left-[-1.23rem] ' onClick={scrollstu}>
+        <span class='mx-4 text-lg font-poppins font-semibold'>Go to Student </span>
         <svg class=" w-10 h-10 mr-2" xmlns="https://www.clipartmax.com/middle/m2H7H7b1A0N4K9N4_students-student-icon-white-png/" viewBox="0 0 16 16"><path ll-rule="evenodd" fill='white' d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z"/></svg>  
       </button>
-      <button id='scrollTop' class='bg-blue-700 hover:bg-blue-400 h-12 w-12 hidden text-white font-bold items-center fixed bottom-4 right-8 rounded-full' onClick={scrollfac}>
+      <button id='scrollTop' class='bg-[#0C397D] hover:bg-blue-400 h-12 w-12 hidden text-white font-bold items-center fixed bottom-4 right-8 rounded-full' onClick={scrollfac}>
         <svg class="h-10 m-1" xmlns="https://www.clipartmax.com/middle/m2H7H7b1A0N4K9N4_students-student-icon-white-png/" viewBox="0 0 16 16"><path ll-rule="evenodd" fill='white' d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/></svg>  
       </button>
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-10 mx-auto">
-          <div id='faculty' class="flex flex-col text-center w-full mb-20">
-            <h1 class="text-3xl font-medium title-font mb-4 text-gray-900 tracking-widest">Faculty Team</h1>
+          <div id='faculty' class="flex flex-col text-center w-full mb-12">
+            <h1 class="text-4xl title-font mb-2 text-gray-900 tracking-widest font-poppins font-black">Faculty Team</h1>
           </div>
           <div class="flex flex-wrap -m-4">
             {faculty}
           </div>
           <div id="student" class="container px-5 py-24 mx-auto">
-            <div class="flex flex-col text-center w-full mb-20">
-              <h1 class="text-3xl font-medium title-font mb-4 text-gray-900">Student Team</h1>
+            <div class="flex flex-col text-center w-full mb-12 mt-20">
+              <h1 class="text-3xl title-font mb-2 text-gray-900 font-poppins font-black">Student Team</h1>
             </div>
             <div class="flex flex-wrap justify-center -m-4">
               {student}
