@@ -93,7 +93,7 @@ function about() {
 
   return (
     <div><div class='scroll-smooth'>  
-      <button class='gotostu bg-[#0C397D] text-white font-bold py-2 px-4 rounded inline-flex items-center fixed bottom-4 transition-all ease-in-out duration-800 left-[-9.75rem]  hover:left-[-1.23rem] ' onClick={scrollstu}>
+      <button class='gotostu bg-[#0C397D] text-white font-bold py-2 px-4 rounded-full inline-flex items-center fixed bottom-4 transition-all ease-in-out duration-800 left-[-9.75rem]  hover:left-[-1.23rem] ' onClick={scrollstu}>
         <span class='mx-4 text-lg font-poppins font-semibold'>Go to Student </span>
         <svg class=" w-10 h-10 mr-2" xmlns="https://www.clipartmax.com/middle/m2H7H7b1A0N4K9N4_students-student-icon-white-png/" viewBox="0 0 16 16"><path ll-rule="evenodd" fill='white' d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z"/></svg>  
       </button>
