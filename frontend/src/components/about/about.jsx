@@ -20,19 +20,19 @@ function about() {
     {
       name: 'DR. KAMAL KISHORE KHATRI',
       por: 'ASME JAIPUR CHAIR.',
-      desc: 'The department of Mechanical- Mechatronics Engineering was started in July 2013 at the LNMIIT to cater the need of producing highly skilled professionals in the field of Mechanical engineering and allied areas. During such a short duration, the department has come to a stage that a student chapter of internationally reputed ASME has been formed with great hope and optimism. This was possible due to the passion, enthusiasm, hardworking of the students and the faculty members and the motivation by the Director. A very popular saying goes, “when the going gets tough the tough gets going”. The ASME student chapter is quite conclusively a community of the students, for the students and by the students which primarily aims to equip the students with all the artillery required to sustain the engaging warfare and cutthroat antagonism of industrial and corporate world. Nonetheless, with an element of ecstasy we proudly celebrate the formation of the ASME chapter in our institution. The student chapter we hope would make a mark in itself with the sheer commitment and enthusiasm of its members, who will participate in learning process and industriously present the department and the institution with a much needed air of change, quite decisively in the positive direction.',
+      desc: 'The department of Mechanical- Mechatronics Engineering was started in July 2013 at the LNMIIT to cater the need of producing highly skilled professionals in the field of Mechanical engineering and allied areas. During such a short duration, the department has come to a stage that a student chapter of internationally reputed ASME has been formed with great hope and optimism. This was possible due to the passion, enthusiasm, hardworking of the students and the faculty members and the motivation by the Director. A very popular saying goes, “when the going gets tough the tough gets going”. The ASME student chapter is quite conclusively a community of the students, for the students and by the students which primarily aims to equip the students with all the artillery required to sustain the engaging warfare and cutthroat antagonism of industrial and corporate world. ',
       img: 'https://asme.lnmiit.ac.in/images/hod.png'
     },
     {
       name: 'DR. VIKRAM SHARMA',
       por: 'ASSOCIATE PROFESSOR, MME LNMIIT',
-      desc: 'ASME student chapter at LNMIIT, though only two years old, has already made its mark by earning the title of Outstanding start up section and by successfully bidding for the ASME E-Fest Asia Pacific 2017. The student team have shown enthusiasm in taking up projects and organizing workshops. The Mechanical and Mechatronics Engineering Department at LNMIIT has well equiped CAD lab with designing and computational software such as Solidworks, Ansys, MSC, Auto Desk, Robo Analyzer, VI-Rail and Matlab. The fabrication facilities in the workshop boasts of industrial grade machine tools such as vertical machining centre (VMC), plasma cutting machine, 3-D printing machine and Fanuc-make welding robot.The department has also set up state of the art NI Lab and Robotics Lab. Using the extensive infrastructure available, the ASME student chapter at LNMIIT endeavors to promote extensive engineering design and fabrication skills dedicated to create innovative solutions in the field of Mechanical and Mechatronics Engineering. For our students, the chapter acts as an enabler towards knowledge sharing, collaboration, skill up gradation and career enrichment. My compliments to students & faculty members and best wishes to all !',
-      img: 'https://asme.lnmiit.ac.in/images/director.jpg'
+      desc: 'ASME student chapter at LNMIIT, though only two years old, has already made its mark by earning the title of Outstanding start up section and by successfully bidding for the ASME E-Fest Asia Pacific 2017. The student team have shown enthusiasm in taking up projects and organizing workshops. The Mechanical and Mechatronics Engineering Department at LNMIIT has well equiped CAD lab with designing and computational software such as Solidworks, Ansys, MSC, Auto Desk, Robo Analyzer, VI-Rail and Matlab. The fabrication facilities in the workshop boasts of industrial grade machine tools such as vertical machining centre (VMC), plasma cutting machine, 3-D printing machine and Fanuc-make welding robot.The department has also set up state of the art NI Lab and Robotics Lab. Using the extensive infrastructure available, the ASME student chapter at LNMIIT endeavors to promote extensive engineering design and fabrication skills dedicated to create innovative solutions in the field of Mechanical and Mechatronics Engineering. ',
+      img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80'
     },
     {
       name: 'DR. VIKRAM SHARMA',
       por: 'ASSOCIATE PROFESSOR, MME LNMIIT',
-      desc: 'ASME student chapter at LNMIIT, though only two years old, has already made its mark by earning the title of Outstanding start up section and by successfully bidding for the ASME E-Fest Asia Pacific 2017. The student team have shown enthusiasm in taking up projects and organizing workshops. The Mechanical and Mechatronics Engineering Department at LNMIIT has well equiped CAD lab with designing and computational software such as Solidworks, Ansys, MSC, Auto Desk, Robo Analyzer, VI-Rail and Matlab. The fabrication facilities in the workshop boasts of industrial grade machine tools such as vertical machining centre (VMC), plasma cutting machine, 3-D printing machine and Fanuc-make welding robot.The department has also set up state of the art NI Lab and Robotics Lab. Using the extensive infrastructure available, the ASME student chapter at LNMIIT endeavors to promote extensive engineering design and fabrication skills dedicated to create innovative solutions in the field of Mechanical and Mechatronics Engineering. For our students, the chapter acts as an enabler towards knowledge sharing, collaboration, skill up gradation and career enrichment. My compliments to students & faculty members and best wishes to all !',
+      desc: ' ASME student chapter at LNMIIT, though only two years old, has already made its mark by earning the title of Outstanding start up section and by successfully bidding for the ASME E-Fest Asia Pacific 2017. The student team have shown enthusiasm in taking up projects and organizing workshops. The Mechanical and Mechatronics Engineering Department at LNMIIT has well equiped CAD lab with designing and computational software such as Solidworks, Ansys, MSC, Auto Desk, Robo Analyzer, VI-Rail and Matlab. The fabrication facilities in the workshop boasts of industrial grade machine tools such as vertical machining centre (VMC), plasma cutting machine, 3-D printing machine and Fanuc-make welding robot.The department has also set up state of the art NI Lab and Robotics Lab. Using the extensive infrastructure available, the ASME student chapter at LNMIIT endeavors to promote extensive engineering design and fabrication skills dedicated to create innovative solutions in the field of Mechanical and Mechatronics Engineering. ',
       img: 'https://asme.lnmiit.ac.in/images/director.jpg'
     },
     {
@@ -83,6 +83,13 @@ function about() {
     elem.scrollIntoView();
   }
   window.onscroll=function(){ // hide the onTop button when the page is loaded 
+    if ( document.documentElement.scrollTop>document.getElementById('student').offsetTop-document.body.scrollTop-4){
+      document.getElementById('scrollStudent').style.display ='none';
+    }
+    else{
+      document.getElementById('scrollStudent').style.display ='inline-flex';
+    }
+
     if (document.body.scrollTop>160 || document.documentElement.scrollTop>160){
       document.getElementById('scrollTop').style.display ='block';
     }
@@ -93,7 +100,7 @@ function about() {
 
   return (
     <div><div class='scroll-smooth'>  
-      <button class='gotostu bg-[#0C397D] text-white font-bold py-2 px-4 rounded-full inline-flex items-center fixed bottom-4 transition-all ease-in-out duration-800 left-[-9.75rem]  hover:left-[-1.23rem] ' onClick={scrollstu}>
+      <button id='scrollStudent' class='gotostu bg-[#0C397D] text-white font-bold py-2 px-4 rounded-full inline-flex items-center fixed bottom-4 transition-all ease-in-out duration-800 left-[-9.75rem]  hover:left-[-1.23rem] ' onClick={scrollstu}>
         <span class='mx-4 text-lg font-poppins font-semibold'>Go to Student </span>
         <svg class=" w-10 h-10 mr-2" xmlns="https://www.clipartmax.com/middle/m2H7H7b1A0N4K9N4_students-student-icon-white-png/" viewBox="0 0 16 16"><path ll-rule="evenodd" fill='white' d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z"/></svg>  
       </button>
@@ -103,16 +110,16 @@ function about() {
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-10 mx-auto">
           <div id='faculty' class="flex flex-col text-center w-full mb-12">
-            <h1 class="text-4xl title-font mb-2 text-gray-900 tracking-widest font-poppins font-black">Faculty Team</h1>
+            <h1 class="text-4xl title-font mb-4 text-gray-900 tracking-widest font-poppins font-black">Faculty Team</h1>
           </div>
           <div class="flex flex-wrap -m-4">
             {faculty}
           </div>
-          <div id="student" class="container px-5 py-24 mx-auto">
+          <div id="student" class="container px-5 py-4 mx-auto ">
             <div class="flex flex-col text-center w-full mb-12 mt-20">
               <h1 class="text-3xl title-font mb-2 text-gray-900 font-poppins font-black">Student Team</h1>
             </div>
-            <div class="flex flex-wrap justify-center -m-4">
+            <div class="flex flex-wrap justify-center lg:m-4 sm:m-1 ">
               {student}
             </div>
           </div>
