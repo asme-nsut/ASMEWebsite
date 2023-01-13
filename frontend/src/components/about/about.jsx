@@ -46,27 +46,37 @@ function about() {
     {
       name: 'Vishal Singh Jadon',
       por: 'Chair',
-      img: 'https://asme.lnmiit.ac.in/images/team/Vishal.jpg'
+      img: 'https://asme.lnmiit.ac.in/images/team/Vishal.jpg',
+      insta:'https://www.instagram.com/virat.kohli/?hl=en',
+      linkedin:'https://www.linkedin.com/in/williamhgates/'
     },
     {
       name: 'Hash Bangur',
       por: 'Vice Chair',
-      img: 'https://asme.lnmiit.ac.in/images/team/x4.jpg'
+      img: 'https://asme.lnmiit.ac.in/images/team/x4.jpg',
+      insta:'https://www.instagram.com/virat.kohli/?hl=en',
+      linkedin:'https://www.linkedin.com/in/williamhgates/'
     },
     {
       name: 'Nisarg Bhatt',
       por: 'Secretary',
-      img: 'https://asme.lnmiit.ac.in/images/team/x1.jpg'
+      img: 'https://asme.lnmiit.ac.in/images/team/x1.jpg',
+      insta:'https://www.instagram.com/virat.kohli/?hl=en',
+      linkedin:'https://www.linkedin.com/in/williamhgates/'
     },
     {
       name: 'Mudti Parnami',
       por: 'Event Planning Head',
-      img: 'https://asme.lnmiit.ac.in/images/team/x3.jpg'
+      img: 'https://asme.lnmiit.ac.in/images/team/x3.jpg',
+      insta:'https://www.instagram.com/virat.kohli/?hl=en',
+      linkedin:'https://www.linkedin.com/in/williamhgates/'
     },
     {
       name: 'Vijay Singh Rathore',
       por: 'Media And Publication head',
-      img: 'https://asme.lnmiit.ac.in/images/team/x2.jpg'
+      img: 'https://asme.lnmiit.ac.in/images/team/x2.jpg',
+      insta:'https://www.instagram.com/virat.kohli/?hl=en',
+      linkedin:'https://www.linkedin.com/in/williamhgates/'
     }
   ]
 
@@ -100,12 +110,12 @@ function about() {
 
   return (
     <div><div class='scroll-smooth'>  
-      <button id='scrollStudent' class='gotostu bg-[#0C397D] text-white z-20 font-bold py-2 px-4 rounded-full inline-flex items-center fixed bottom-4 transition-all ease-in-out duration-800 left-[-9.75rem]  hover:left-[-1.23rem] ' onClick={scrollstu}>
+      <button id='scrollStudent' class='gotostu bg-[#0C397D] text-white z-20 font-bold py-2 px-4 rounded-full inline-flex items-center fixed bottom-4 transition-all ease-in-out duration-800 left-[-9.75rem]  lg:hover:left-[-1.23rem] ' onClick={scrollstu}>
         <span class='mx-4 text-lg font-poppins font-semibold'>Go to Student </span>
         <svg class=" w-10 h-10 mr-2" xmlns="https://www.clipartmax.com/middle/m2H7H7b1A0N4K9N4_students-student-icon-white-png/" viewBox="0 0 16 16"><path ll-rule="evenodd" fill='white' d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z"/></svg>  
       </button>
-      <button id='scrollTop' class='bg-[#0C397D] hover:bg-blue-400 z-20 h-12 w-12 hidden text-white font-bold items-center fixed bottom-4 right-8 rounded-full' onClick={scrollfac}>
-        <svg class="h-10 m-1" xmlns="https://www.clipartmax.com/middle/m2H7H7b1A0N4K9N4_students-student-icon-white-png/" viewBox="0 0 16 16"><path ll-rule="evenodd" fill='white' d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/></svg>  
+      <button id='scrollTop' class='bg-[#0C397D] hover:bg-blue-400 z-20 h-12 w-12 hidden text-white font-bold items-center pl-[5px] align-middle fixed bottom-4 right-8 rounded-full' onClick={scrollfac}>
+        <svg class="h-7 m-1" xmlns="https://www.clipartmax.com/middle/m2H7H7b1A0N4K9N4_students-student-icon-white-png/" viewBox="0 0 16 16"><path ll-rule="evenodd" fill='white' d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/></svg>  
       </button>
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-10 mx-auto">
