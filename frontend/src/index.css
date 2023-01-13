@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+  .block-1{
+      @apply max-w-[40vw] max-h-full select-none left-5 z-0 scale-[0.5]
+  }
+  .block-2{
+      @apply max-w-full max-h-full select-none z-10
+  }
+  .block-3{
+      @apply max-w-[40vw] max-h-full select-none right-5 z-0 scale-[0.5]
+  }
+}
+
+
 
 body {
   margin: 0;
