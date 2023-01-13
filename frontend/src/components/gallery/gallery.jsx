@@ -2,43 +2,50 @@ import { useEffect, useState, useMemo } from "react";
 import { VscClose, VscChevronLeft, VscChevronRight } from "react-icons/vsc";
 
 const ASMEgallery = () => {
-    const galleryImages = useMemo(()=>[{
-        img: "https://source.unsplash.com/random/1",
-    },
-    {
-        img: "https://source.unsplash.com/random/2",
-    },
-    {
-        img: "https://source.unsplash.com/random/3",
-    },
-    {
-        img: "https://source.unsplash.com/random/4",
-    },
-    {
-        img: "https://source.unsplash.com/random/5",
-    },
-    {
-        img: "https://source.unsplash.com/random/6",
-    },
-    {
-        img: "https://source.unsplash.com/random/7",
-    },
-    {
-        img: "https://source.unsplash.com/random/8",
-    },
-    {
-        img: "https://source.unsplash.com/random/9",
-    },
-    {
-        img: "https://source.unsplash.com/random/10",
-    },
-    {
-        img: "https://source.unsplash.com/random/11",
-    },
-    {
-        img: "https://source.unsplash.com/random/12",
-    },
-],[])
+    // Image source list: Source for all the images to be added should be mentioned here.
+    const galleryImages = useMemo(
+        () => [
+            {
+                img: "https://source.unsplash.com/random/1",
+            },
+            {
+                img: "https://source.unsplash.com/random/2",
+            },
+            {
+                img: "https://source.unsplash.com/random/3",
+            },
+            {
+                img: "https://source.unsplash.com/random/4",
+            },
+            {
+                img: "https://source.unsplash.com/random/5",
+            },
+            {
+                img: "https://source.unsplash.com/random/6",
+            },
+            {
+                img: "https://source.unsplash.com/random/7",
+            },
+            {
+                img: "https://source.unsplash.com/random/8",
+            },
+            {
+                img: "https://source.unsplash.com/random/9",
+            },
+            {
+                img: "https://source.unsplash.com/random/10",
+            },
+            {
+                img: "https://source.unsplash.com/random/11",
+            },
+            {
+                img: "https://source.unsplash.com/random/12",
+            },
+        ],
+        []
+    );
+
+    // States for carousel
     const [slideNumber, setSlideNumber] = useState(0);
     const [prevslideNumber, setPrevSlideNumber] = useState(
         galleryImages.length - 1
@@ -46,6 +53,7 @@ const ASMEgallery = () => {
     const [nextslideNumber, setNextSlideNumber] = useState(1);
     const [openModal, setOpenModal] = useState(false);
 
+    // Functions for carousel
     const handleOpenModal = (index) => {
         console.log("clicked");
         setSlideNumber(index);
@@ -60,13 +68,19 @@ const ASMEgallery = () => {
     useEffect(() => {
         if (openModal) {
             document.querySelector(".block-1 img").src =
-            galleryImages[prevslideNumber].img;
+                galleryImages[prevslideNumber].img;
             document.querySelector(".block-2 img").src =
-            galleryImages[slideNumber].img;
+                galleryImages[slideNumber].img;
             document.querySelector(".block-3 img").src =
-            galleryImages[nextslideNumber].img;
+                galleryImages[nextslideNumber].img;
         }
-    }, [openModal, galleryImages, prevslideNumber, slideNumber, nextslideNumber]);
+    }, [
+        openModal,
+        galleryImages,
+        prevslideNumber,
+        slideNumber,
+        nextslideNumber,
+    ]);
     const handleCloseModal = () => {
         setOpenModal(false);
     };
@@ -82,11 +96,11 @@ const ASMEgallery = () => {
             ? setNextSlideNumber(galleryImages.length - 1)
             : setNextSlideNumber(nextslideNumber - 1);
         document.querySelector(".block-1 img").src =
-        galleryImages[prevslideNumber].img;
+            galleryImages[prevslideNumber].img;
         document.querySelector(".block-2 img").src =
-        galleryImages[slideNumber].img;
+            galleryImages[slideNumber].img;
         document.querySelector(".block-3 img").src =
-        galleryImages[nextslideNumber].img;
+            galleryImages[nextslideNumber].img;
     };
 
     const nextSlide = () => {
@@ -100,13 +114,13 @@ const ASMEgallery = () => {
             ? setNextSlideNumber(0)
             : setNextSlideNumber(nextslideNumber + 1);
         document.querySelector(".block-1 img").src =
-        galleryImages[prevslideNumber].img;
+            galleryImages[prevslideNumber].img;
         document.querySelector(".block-2 img").src =
-        galleryImages[slideNumber].img;
+            galleryImages[slideNumber].img;
         document.querySelector(".block-3 img").src =
-        galleryImages[nextslideNumber].img;
+            galleryImages[nextslideNumber].img;
     };
-
+    // Functions for animation of carousel
     const prevchange = () => {
         if (document.getElementById("one").classList.contains("block-1")) {
             document
@@ -183,6 +197,7 @@ const ASMEgallery = () => {
             <h1 className="flex justify-center content-center text-7xl mt-5 font-semibold text-gray-900">
                 Gallery
             </h1>
+            {/* Carousel */}
             {openModal && (
                 <div class="fixed top-0 left-0 right-0 bottom-0 flex flex-row items-center justify-center z-50 max-w-full max-h-full bg-stone-900/[0.7]">
                     <button className="z-20" onClick={handleCloseModal}>
@@ -195,7 +210,7 @@ const ASMEgallery = () => {
                             prevchange();
                         }}
                     >
-                        <VscChevronLeft className="fixed cursor-pointer top-1/2 left-2 h-10 w-10 text-white transition-all hover:text-blue-500 md:left-5"/>
+                        <VscChevronLeft className="fixed cursor-pointer top-1/2 left-2 h-10 w-10 text-white transition-all hover:text-blue-500 md:left-5" />
                     </button>
                     <button
                         className="z-20"
@@ -204,7 +219,7 @@ const ASMEgallery = () => {
                             nextchange();
                         }}
                     >
-                        <VscChevronRight className="fixed cursor-pointer top-1/2 right-2 h-10 w-10 text-white transition-all hover:text-blue-500 md:right-5"/>
+                        <VscChevronRight className="fixed cursor-pointer top-1/2 right-2 h-10 w-10 text-white transition-all hover:text-blue-500 md:right-5" />
                     </button>
 
                     <div className="w-[calc(100%-40px)] h-[calc(100%-40px)] flex items-center justify-center">
@@ -239,6 +254,7 @@ const ASMEgallery = () => {
                 </div>
             )}
             <hr className="flex justify-center content-center mx-auto my-8 rounded-lg bg-blue-500 h-1 w-64" />
+            {/* Grid of images */}
             <div className="place-items-center max-w-[250px] py-5 mb-7 gap-5 text-black mx-auto grid grid-cols-1 min-[425px]:grid-cols-2 min-[425px]:max-w-[400px] sm:grid-cols-3 sm:max-w-[600px]  md:grid-cols-4 md:max-w-[740px] lg:max-w-[950px] xl:max-w-[1200px]">
                 {galleryImages &&
                     galleryImages.map((slide, index) => {

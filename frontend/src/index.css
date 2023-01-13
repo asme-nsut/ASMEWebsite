@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Classes for gallery carousel */
 @layer components{
   .block-1{
       @apply max-w-[40vw] max-h-full select-none left-5 z-0 scale-[0.5]
