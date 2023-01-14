@@ -21,13 +21,13 @@ function Nav() {
             <div class="flex flex-col mr-1">
 
             <hr></hr>
-              <a class="mr-5 text-xl hover:text-gray-900" href="/">
+              <a class="mr-5 text-xl text-center hover:text-[#0C397D]" href="/">
                 Home
               </a>
-              <a class="mr-5 text-xl hover:text-gray-900" href="/about">
+              <a class="mr-5 text-xl text-center hover:text-[#0C397D]" href="/about">
                 About
               </a>
-              <a class="mr-5 text-xl hover:text-gray-900" href="/gallery">
+              <a class="mr-5 text-xl text-center hover:text-[#0C397D]" href="/gallery">
                 Gallery
               </a>
             </div>

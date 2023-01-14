@@ -4,10 +4,24 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+<<<<<<< HEAD
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
     },
     extend: {},
+=======
+    extend: {
+      keyframes: {
+        appear: {
+          '0%': { opacity:'0' },
+          '100%': { opacity:'1' },
+        }
+      },
+      animation: {
+        appear: 'appear 2s ease-in-out 1',
+      },
+    },
+>>>>>>> ca67f663f13f9785fbf89cf895573e797a76f995
   },
   plugins: [],
 }

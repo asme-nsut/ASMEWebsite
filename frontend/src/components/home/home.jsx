@@ -143,11 +143,13 @@ function home() {
                   </svg>
                 </div>
                 <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
-                  Shooting Stars
+                  OUR AIM
                 </h2>
                 <p class="leading-relaxed text-base">
-                  Fingerstache flexitarian street art 8-bit waist co, subway
-                  tile poke farm.
+                Our mission at ASME NSUT is to Build Skills, Make Connections and Engineer your future.
+            We here aim to enlighten students with the practical application of concepts taught in a classroom through amazing projects, events and competitions to broaden their horizons across various disciplines.
+  ASME NSUT strongly believes.
+
                 </p>
               </div>
             </div>
@@ -254,11 +256,11 @@ function home() {
                   </svg>
                 </div>
                 <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
-                  Ramona Falls
+                  WHY US?
                 </h2>
                 <p class="leading-relaxed text-base">
-                  Fingerstache flexitarian street art 8-bit waist co, subway
-                  tile poke farm.
+                It is a professional engineering society that serves many roles, including hosting a technical event, public affairs and outreach efforts, student and early career development and standards and certification. a not-for-profit professional organisation founded in 1880, enables collaboration, knowledge sharing andand skill development across all.
+
                 </p>
               </div>
             </div>
