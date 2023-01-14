@@ -24,7 +24,7 @@ function facultydiv({ items, facultyId }) {
       </div>
     </div>;
   return (
-    <div class="md:px-28 px-8 pb-8 mb-7">
+    <div class="md:px-28 px-1 pb-8 mb-7">
       {aligntext}
     </div>
   )
