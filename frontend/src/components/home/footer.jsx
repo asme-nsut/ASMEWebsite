@@ -21,7 +21,7 @@ function footer() {
                   <a class="text-gray-600 hover:text-gray-800" href="/gallery">Gallery</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Contact</a>
+                  <a class="text-gray-600 hover:text-gray-800" href="/contact">Contact</a>
                 </li>
               </nav>
             </div>
