@@ -4,7 +4,7 @@ import Studentdiv from './studentdiv'
 import './about.css'
 
 function about() {
-  const facultydata = [
+  const facultydata = [ 
     {
       name: 'PROF. RAHUL BANERJEE',
       por: 'PATRON ASME LNMIIT, DIRECTOR- THE LNMIIT',
