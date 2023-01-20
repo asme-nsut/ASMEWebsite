@@ -1,75 +1,43 @@
 import React from 'react'
+import EventDiv from './eventdiv';
 
 function event() {
+  const events=[
+    {
+      name:'Team Falcon',
+      brief:'ASME e-HPVC (Human Powered Vehicle Challenge)',
+      desc:'Team Falcon is a racing team of ASME NSUT designing, innovating and competing for e-HPVC (Human Powered Vehicle Challenge). ASME e-HPVC, started in 1983, is a prestigious engineering design and innovation competition organized by ASME every year.',
+      month:'Jan',
+      date:'20',
+    },
+    {
+      name:'Team Ampere',
+      brief:'ASME IAM3D',
+      desc:'Team Ampere is a robotics team of ASME NSUT leveraging additive manufacturing technologies and creating new designs. Showcasing our creativity and innovation through application of design principles. The ASME Innovative Additive Manufacturing 3D (IAM3D®) Challenge is designed to give mechanical and multidisciplinary undergraduate students around the world an opportunity to re-engineer existing products or create new designs.',
+      month:'Jan',
+      date:'20',
+    },
+    {
+      name:'The 3D Modeling Challenge',
+      brief:'',
+      desc:'ASME NSUT organizes the 3D Modeling Challenge that provides the students with the opportunity to design, innovate and present their ideas. In it students use their skills and favorite CAD software to solve the given problem or recreate the given model.',
+      month:'Jan',
+      date:'20',
+    },
+  ]
+  const event = events.map((detail, index) => <EventDiv key={index} eventid={index} events={detail} />)
   return (
     <div>
 <section class="text-gray-600 body-font py-10">
   <div class="text-center ">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Events- ASME</h1>
-      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
+      <h1 class="sm:text-3xl text-2xl title-font text-gray-900 mb-4 font-poppins font-black">Events- ASME</h1>
       <div class="flex mt-6 justify-center">
         <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
       </div>
     </div>
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap -mx-4 -my-8">
-      <div class="py-8 px-4 lg:w-1/3">
-        <div class="h-full flex items-start">
-          <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
-            <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Jul</span>
-            <span class="font-medium text-lg text-gray-800 title-font leading-none">18</span>
-          </div>
-          <div class="flex-grow pl-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-indigo-500 mb-1">CATEGORY</h2>
-            <h1 class="title-font text-xl font-medium text-gray-900 mb-3">The 400 Blows</h1>
-            <p class="leading-relaxed mb-5">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            <a class="inline-flex items-center">
-              <img alt="blog" src="https://dummyimage.com/103x103" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center" />
-              <span class="flex-grow flex flex-col pl-3">
-                <span class="title-font font-medium text-gray-900">Alper Kamu</span>
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="py-8 px-4 lg:w-1/3">
-        <div class="h-full flex items-start">
-          <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
-            <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Jul</span>
-            <span class="font-medium text-lg text-gray-800 title-font leading-none">18</span>
-          </div>
-          <div class="flex-grow pl-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-indigo-500 mb-1">CATEGORY</h2>
-            <h1 class="title-font text-xl font-medium text-gray-900 mb-3">Shooting Stars</h1>
-            <p class="leading-relaxed mb-5">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            <a class="inline-flex items-center">
-              <img alt="blog" src="https://dummyimage.com/102x102" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center" />
-              <span class="flex-grow flex flex-col pl-3">
-                <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="py-8 px-4 lg:w-1/3">
-        <div class="h-full flex items-start">
-          <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
-            <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Jul</span>
-            <span class="font-medium text-lg text-gray-800 title-font leading-none">18</span>
-          </div>
-          <div class="flex-grow pl-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-indigo-500 mb-1">CATEGORY</h2>
-            <h1 class="title-font text-xl font-medium text-gray-900 mb-3">Neptune</h1>
-            <p class="leading-relaxed mb-5">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            <a class="inline-flex items-center">
-              <img alt="blog" src="https://dummyimage.com/101x101" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center" />
-              <span class="flex-grow flex flex-col pl-3">
-                <span class="title-font font-medium text-gray-900">Henry Letham</span>
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
+      {event}
     </div>
   </div>
 </section>
