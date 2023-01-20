@@ -32,7 +32,7 @@ function Nav() {
             class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
             href="/"
           >
-            <img class="w-16 h-10 mt-2" src="https://i.imgur.com/6ha4cAJ.png" alt="asme logo"/>
+            <img class="w-24 h-16 mt-2" src="https://i.imgur.com/Os73S9e.png" alt="asme logo"/>
           </a>
 
           <div class={`${open ? "hidden" : "md:hidden"}`}>
@@ -112,7 +112,7 @@ function Nav() {
 
           <div
             onClick={() => setOpen(!open)}
-            class="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+            class="text-3xl absolute right-8 top-10 cursor-pointer md:hidden"
           >
             <h3>
               {" "}
