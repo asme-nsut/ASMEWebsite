@@ -26,7 +26,7 @@ function contact() {
   <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
     <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
       {/* <iframe width="100%" height="100%" class="absolute inset-0 grayscale contrast-120 opacity-40" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" ></iframe> */}
-      <iframe width="100%" height="100%" class="absolute inset-0 grayscale-10 contrast-120 opacity-80" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=mechanical department nsit&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>"
+      <iframe width="100%" height="100%" class="absolute inset-0 grayscale-10 contrast-120 opacity-80 " frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=mechanical department nsit&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>"
       {/* <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=mechanical department nsit&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.gachacute.com/">www.gachacute.com</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}</style></div> */}
 
       <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
@@ -38,7 +38,7 @@ function contact() {
           <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
           <a class="text-blue-500 leading-relaxed" href="mailto:asme@nsut.ac.in">asme@nsut.ac.in</a>
           <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
-          <p class="leading-relaxed">123-456-7890</p>
+          <p class="leading-relaxed">+91 9811362407</p>
         </div>
       </div>
     </div>
