@@ -13,6 +13,12 @@ function home() {
                 <span class="text-5xl text-[#0C397D] leading-relaxeds">
                   American Society of Mechanical Engineers{" "}
                 </span>
+
+              <br></br>
+
+                <span class="text-5xl text-[#0C397D] leading-relaxeds">
+                  NSUT{" "}
+                </span>
                 ?
               </h2>
 
@@ -61,27 +67,27 @@ function home() {
               <div class="flex flex-wrap -m-4 text-center">
                 <div class="p-4 sm:w-1/4 w-1/2">
                   <h2 class="title-font font-medium sm:text-5xl text-3xl text-white mb-1">
-                    1800
+                    2022
                   </h2>
                   <p class="leading-relaxed">Year Established</p>
                 </div>
                 <div class="p-4 sm:w-1/4 w-1/2">
                   <h2 class="title-font font-medium sm:text-5xl text-3xl text-white mb-1">
-                    8500+
+                    50+
                   </h2>
                   <p class="leading-relaxed">Active Members</p>
                 </div>
                 <div class="p-4 sm:w-1/4 w-1/2">
                   <h2 class="title-font font-medium sm:text-5xl text-3xl text-white mb-1">
-                    135+
+                    5+
                   </h2>
-                  <p class="leading-relaxed">Countries with ASME Members</p>
+                  <p class="leading-relaxed">Our Events</p>
                 </div>
                 <div class="p-4 sm:w-1/4 w-1/2">
                   <h2 class="title-font font-medium sm:text-5xl text-3xl text-white mb-1">
-                    5000+
+                    2
                   </h2>
-                  <p class="leading-relaxed">Individuals trained annually</p>
+                  <p class="leading-relaxed">Our Teams (Team Falcon and Ampere)</p>
                 </div>
               </div>
             </div>
@@ -97,10 +103,10 @@ function home() {
             </h1>
           </div>
 
-          <div class="flex flex-wrap -m-4">
-            <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="flex flex-wrap -m-4  lg: justify-center ">
+            <div class="xl:w-1/3 md:w-1/2 p-4 ">
               <div class="border border-gray-200 p-6 rounded-lg">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
+                <div class= "w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -118,66 +124,9 @@ function home() {
                   WHO ARE WE
                 </h2>
                 <p class="leading-relaxed text-base">
-                  We are a bunch of enthusiastic engineers who aim to
-                  revolutionise this world with the proper blend of science and
-                  nature. Being in mechanical-mechatronics discipline
-                  engineering, we possess a diverse knowledge of mechanical,
-                  electronics, computer and control engineering which enables us
-                  to think beyond the books and do beyond the existing.
-                </p>
-              </div>
-            </div>
-            <div class="xl:w-1/3 md:w-1/2 p-4">
-              <div class="border border-gray-200 p-6 rounded-lg">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-6 h-6"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                  </svg>
-                </div>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
-                  Shooting Stars
-                </h2>
-                <p class="leading-relaxed text-base">
-                  Fingerstache flexitarian street art 8-bit waist co, subway
-                  tile poke farm.
-                </p>
-              </div>
-            </div>
-            <div class="xl:w-1/3 md:w-1/2 p-4">
-              <div class="border border-gray-200 p-6 rounded-lg">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-6 h-6"
-                    viewBox="0 0 24 24"
-                  >
-                    <circle cx="6" cy="6" r="3"></circle>
-                    <circle cx="6" cy="18" r="3"></circle>
-                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                  </svg>
-                </div>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
-                  WHAT WE INCUBATE
-                </h2>
-                <p class="leading-relaxed text-base">
-                  we strongly hold inside us is to orient our work towards the
-                  betterment of the society, but not at the sake of nature. We
-                  incubate the ideology of sustainable development within us.
-                  Nature is the mother of all, and our aim is to protect it.
-                  Through our engineering skills we shall always promote
-                  sustainability and eco-friendly development in our work.
+                We, in discipline, are part of Mechanical Engineering with diverse knowledge in mechanical, computer, electronics engineering diversifying our spectrum of work to AI and robotics, not losing essence of core Mechanical Engineering. Our enthusiasm lies in revolutionizing this world to think beyond just textbooks by providing exposure to practical aspects in aforementioned fields .
+
+
                 </p>
               </div>
             </div>
@@ -198,46 +147,15 @@ function home() {
                   </svg>
                 </div>
                 <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
-                  SUCCESS PATH
+                  OUR AIM
                 </h2>
                 <p class="leading-relaxed text-base">
-                  Our success path is paved by the zeal to work hard, curiosity
-                  to learn, and determination to develop. We walk on this path
-                  united, taking technology with the people and making them
-                  aware of the boons of science. Our goal is to engineer a world
-                  where science can be efficiently used to make daily life
-                  expedient and people can live together in harmony.
+                Our aim at ASME NSUT is to build a community of engineers and help them to engineer their future by building skills and making connections. We here aim to enlighten students with the practical applications of concepts taught in a classroom through amazing projects, events and competitions to broaden their horizons across various disciplines. ASME NSUT strongly believes in its aim.
+
                 </p>
               </div>
             </div>
-            <div class="xl:w-1/3 md:w-1/2 p-4">
-              <div class="border border-gray-200 p-6 rounded-lg">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-6 h-6"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
-                  </svg>
-                </div>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
-                  OUR VISION
-                </h2>
-                <p class="leading-relaxed text-base">
-                  Through the lens of optimism, we picture a world where science
-                  is no longer a book of fiction, but a realm of possibilities.
-                  We possess the potential to make such miracles happen in the
-                  world, and we must realise this. There are many mysteries yet
-                  to be discovered about this world, and we have a vision to
-                  uncover them. A new world is awaiting for us.
-                </p>
-              </div>
-            </div>
+
             <div class="xl:w-1/3 md:w-1/2 p-4">
               <div class="border border-gray-200 p-6 rounded-lg">
                 <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
@@ -254,16 +172,19 @@ function home() {
                   </svg>
                 </div>
                 <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
-                  Ramona Falls
+                  OUR WORK ETHICS
                 </h2>
                 <p class="leading-relaxed text-base">
-                  Fingerstache flexitarian street art 8-bit waist co, subway
-                  tile poke farm.
+                We have a stern belief in maintaining a healthy work ethics with a zeal to work hard and  passion for what we do. There is space for people’s curiosity, to learn, as this eagerness is what differentiates us as humans.  We strive to make people’s life convenient by making the best use of technology. With this we incubate a culture which protects mother nature. We strongly believe in sustainable and eco friendly development in our work.
+
+
                 </p>
               </div>
             </div>
           </div>
         </div>
+
+
       </section>
       {/* ************************** dates stuff ********************* */}
     </div>

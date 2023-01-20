@@ -2,9 +2,27 @@ import React from "react";
 import "./home.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
+import { useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 function Nav() {
   let [open, setOpen] = useState(true);
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_rtx10be', 'template_j4mb7at', form.current, 'SmfdSxlZE-q5n5a1t')
+
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+  
 
   return (
     <div>
@@ -14,22 +32,28 @@ function Nav() {
             class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
             href="/"
           >
-            <img class="w-16 h-10 mt-2" src="https://i.imgur.com/6ha4cAJ.png" alt="asme logo"/>
+            <img class="w-24 h-16 mt-2" src="https://i.imgur.com/Os73S9e.png" alt="asme logo"/>
           </a>
 
           <div class={`${open ? "hidden" : "md:hidden"}`}>
             <div class="flex flex-col mr-1">
 
             <hr></hr>
-              <a class="mr-5 text-xl hover:text-gray-900" href="/">
+              <a class="mr-5 text-xl text-center hover:text-[#0C397D]" href="/">
                 Home
               </a>
-              <a class="mr-5 text-xl hover:text-gray-900" href="/about">
+              <a class="mr-5 text-xl text-center hover:text-[#0C397D]" href="/about">
                 About
               </a>
-              <a class="mr-5 text-xl hover:text-gray-900" href="/gallery">
+              <a class="mr-5 text-xl text-center hover:text-[#0C397D]" href="/gallery">
                 Gallery
               </a>
+
+              <a class="mr-5 text-xl text-center hover:text-[#0C397D]" href="/Contact">
+                Contact
+                
+              </a>
+              
             </div>
 
           <hr></hr>
@@ -63,7 +87,8 @@ function Nav() {
               Gallery
             </a>
           </nav>
-          <button class="hidden md:inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 md:visible ">
+          <a href="/contact" class="hidden md:inline-flex items-center">
+          <button class="hidden md:inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 md:visible " >
             Contact
             <svg
               fill="none"
@@ -77,10 +102,11 @@ function Nav() {
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </button>
+          </a>
 
           <div
             onClick={() => setOpen(!open)}
-            class="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+            class="text-3xl absolute right-8 top-10 cursor-pointer md:hidden"
           >
             <h3>
               {" "}
@@ -91,6 +117,8 @@ function Nav() {
       </header>
     </div>
   );
+
+  
 }
 
 export default Nav;
