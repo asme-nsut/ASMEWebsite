@@ -13,9 +13,7 @@ function home() {
                 <span class="text-5xl text-[#0C397D] leading-relaxeds">
                   American Society of Mechanical Engineers{" "}
                 </span>
-
-              <br></br>
-
+                <br></br>
                 <span class="text-5xl text-[#0C397D] leading-relaxeds">
                   NSUT{" "}
                 </span>
@@ -87,7 +85,9 @@ function home() {
                   <h2 class="title-font font-medium sm:text-5xl text-3xl text-white mb-1">
                     2
                   </h2>
-                  <p class="leading-relaxed">Our Teams (Team Falcon and Ampere)</p>
+                  <p class="leading-relaxed">
+                    Our Teams (Team Falcon and Ampere)
+                  </p>
                 </div>
               </div>
             </div>
@@ -104,9 +104,9 @@ function home() {
           </div>
 
           <div class="flex flex-wrap -m-4  lg: justify-center ">
-            <div class="xl:w-1/3 md:w-1/2 p-4 ">
-              <div class="border border-gray-200 p-6 rounded-lg">
-                <div class= "w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
+            <div class="xl:w-1/3 md:w-1/2 p-4 	">
+              <div class="border border-gray-200 p-6 rounded-lg min-h-full">
+                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -124,9 +124,13 @@ function home() {
                   WHO ARE WE
                 </h2>
                 <p class="leading-relaxed text-base">
-                We, in discipline, are part of Mechanical Engineering with diverse knowledge in mechanical, computer, electronics engineering diversifying our spectrum of work to AI and robotics, not losing essence of core Mechanical Engineering. Our enthusiasm lies in revolutionizing this world to think beyond just textbooks by providing exposure to practical aspects in aforementioned fields .
-
-
+                  We, in discipline, are part of Mechanical Engineering with
+                  diverse knowledge in mechanical, computer, electronics
+                  engineering diversifying our spectrum of work to AI and
+                  robotics, not losing essence of core Mechanical Engineering.
+                  Our enthusiasm lies in revolutionizing this world to think
+                  beyond just textbooks by providing exposure to practical
+                  aspects in aforementioned fields .
                 </p>
               </div>
             </div>
@@ -150,8 +154,13 @@ function home() {
                   OUR AIM
                 </h2>
                 <p class="leading-relaxed text-base">
-                Our aim at ASME NSUT is to build a community of engineers and help them to engineer their future by building skills and making connections. We here aim to enlighten students with the practical applications of concepts taught in a classroom through amazing projects, events and competitions to broaden their horizons across various disciplines. ASME NSUT strongly believes in its aim.
-
+                  Our aim at ASME NSUT is to build a community of engineers and
+                  help them to engineer their future by building skills and
+                  making connections. We here aim to enlighten students with the
+                  practical applications of concepts taught in a classroom
+                  through amazing projects, events and competitions to broaden
+                  their horizons across various disciplines. ASME NSUT strongly
+                  believes in its aim.
                 </p>
               </div>
             </div>
@@ -175,16 +184,19 @@ function home() {
                   OUR WORK ETHICS
                 </h2>
                 <p class="leading-relaxed text-base">
-                We have a stern belief in maintaining a healthy work ethics with a zeal to work hard and  passion for what we do. There is space for people’s curiosity, to learn, as this eagerness is what differentiates us as humans.  We strive to make people’s life convenient by making the best use of technology. With this we incubate a culture which protects mother nature. We strongly believe in sustainable and eco friendly development in our work.
-
-
+                  We have a stern belief in maintaining a healthy work ethics
+                  with a zeal to work hard and passion for what we do. There is
+                  space for people’s curiosity, to learn, as this eagerness is
+                  what differentiates us as humans. We strive to make people’s
+                  life convenient by making the best use of technology. With
+                  this we incubate a culture which protects mother nature. We
+                  strongly believe in sustainable and eco friendly development
+                  in our work.
                 </p>
               </div>
             </div>
           </div>
         </div>
-
-
       </section>
       {/* ************************** dates stuff ********************* */}
     </div>
