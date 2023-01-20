@@ -4,7 +4,7 @@ import Studentdiv from './studentdiv'
 import './about.css'
 
 const iconPath = process.env.PUBLIC_URL + '/abimages/';
-
+ 
 function about() {
   const facultydata = [ 
     {
