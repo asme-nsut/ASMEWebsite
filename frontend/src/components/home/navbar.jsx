@@ -52,23 +52,14 @@ function Nav() {
               <a class="mr-5 text-xl text-center hover:text-[#0C397D]" href="/">
                 Home
               </a>
-              <a
-                class="mr-5 text-xl text-center hover:text-[#0C397D]"
-                href="/about"
-              >
+              <a class="mr-5 text-xl text-center hover:text-[#0C397D]"
+                href="/about">
                 About
               </a>
-<<<<<<< HEAD
               <a class="mr-5 text-xl text-center hover:text-[#0C397D]" href="/events">
                 Events
               </a>
               <a class="mr-5 text-xl text-center hover:text-[#0C397D]" href="/gallery">
-=======
-              <a
-                class="mr-5 text-xl text-center hover:text-[#0C397D]"
-                href="/gallery"
-              >
->>>>>>> 9a4ddd133d8826ccda30f98302e386df15536687
                 Gallery
               </a>
 
