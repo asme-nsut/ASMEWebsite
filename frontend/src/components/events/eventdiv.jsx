@@ -3,7 +3,7 @@ import React from 'react'
 function eventDiv({events,eventid}) {
   return (
     <>
-    <div class="py-8 px-4 lg:w-[45%] mx-4 my-4 shadow-[4px_6px_16px_3px_#00000024] rounded-[30px]">
+    <div class="py-8 px-4 lg:w-[45%] mx-4 my-4 shadow-[4px_6px_16px_3px_#00000024] rounded-[25px]">
         <div class="h-full flex items-start ">
           <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
             <span class="text-gray-500 pb-2 pt-1 mb-2 border-b-2 border-gray-200">{events.month}</span>
