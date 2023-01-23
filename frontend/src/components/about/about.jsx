@@ -3,80 +3,107 @@ import Facultydiv from './facultydiv'
 import Studentdiv from './studentdiv'
 import './about.css'
 
+const iconPath = process.env.PUBLIC_URL + '/abimages/';
+ 
 function about() {
-  const facultydata = [
+  const facultydata = [ 
     {
-      name: 'PROF. RAHUL BANERJEE',
-      por: 'PATRON ASME LNMIIT, DIRECTOR- THE LNMIIT',
-      desc: 'It pleasurize me having ASME student section here in the campus of LNMIIT, Jaipur. ASME is a non-profit organisation that helps engineering community to develop solutions for real world challenges since 1880. I wish having the student section of such a organisation will surely make the students exposed to latest advancements in the field of engineering and will also make them out into a personality that will help in the growing needs of the society. With so many years of experience in the field of engineering i would say that these kind of organisations not only helps the students grow technically but also incorporate in them the sense of responsibility and management. I wish members of the section to take the initiative and take the institute to the new benchmarks of excellence. I ensure institute will always accompany them in their success paths.',
+      name: 'Prof. D K Singh',
+      por: 'Patron ASME NSUT, HOD Mechanical Engineering, NSUT',
+      desc: 'I feel immense pride to announce the establishment of the ASME student chapter at NSUT. I really appreciate the work ASME student chapter at NSUT puts into work and with this welcome you all. Through my experience, in the mechanical engineering field, I see the ASME student section as a valuable resource for students to get involved in the mechanical engineering community, gain hands-on experience and networking opportunities, and develop leadership skills. Also  the opportunities for collaboration and outreach that an ASME student section can provide is highly appreciable.',
       img: 'https://asme.lnmiit.ac.in/images/director.jpg'
     },
     {
-      name: 'DR. MANOJ KUMAR',
-      por: 'FACULTY ADVISOR, HOD MME LNMIIT',
-      desc: 'It gives me an immense pleasure to welcome you to ASME Student Chapter at The LNM Institute of Information Technology, Jaipur. The aim to establish ASME Student Chapter at The LNM Institute of Information Technology is to build a community which helps LNMIIT students understand what it means to be an engineer, creative aptitude towards engineering, build productive things, learn practical skills, place jobs and network with professionals.',
-      img: 'https://asme.lnmiit.ac.in/images/mentor.png'
-    },
-    {
-      name: 'DR. KAMAL KISHORE KHATRI',
-      por: 'ASME JAIPUR CHAIR.',
-      desc: 'The department of Mechanical- Mechatronics Engineering was started in July 2013 at the LNMIIT to cater the need of producing highly skilled professionals in the field of Mechanical engineering and allied areas. During such a short duration, the department has come to a stage that a student chapter of internationally reputed ASME has been formed with great hope and optimism. This was possible due to the passion, enthusiasm, hardworking of the students and the faculty members and the motivation by the Director. A very popular saying goes, “when the going gets tough the tough gets going”. The ASME student chapter is quite conclusively a community of the students, for the students and by the students which primarily aims to equip the students with all the artillery required to sustain the engaging warfare and cutthroat antagonism of industrial and corporate world. ',
-      img: 'https://asme.lnmiit.ac.in/images/hod.png'
-    },
-    {
-      name: 'DR. VIKRAM SHARMA',
-      por: 'ASSOCIATE PROFESSOR, MME LNMIIT',
-      desc: 'ASME student chapter at LNMIIT, though only two years old, has already made its mark by earning the title of Outstanding start up section and by successfully bidding for the ASME E-Fest Asia Pacific 2017. The student team have shown enthusiasm in taking up projects and organizing workshops. The Mechanical and Mechatronics Engineering Department at LNMIIT has well equiped CAD lab with designing and computational software such as Solidworks, Ansys, MSC, Auto Desk, Robo Analyzer, VI-Rail and Matlab. The fabrication facilities in the workshop boasts of industrial grade machine tools such as vertical machining centre (VMC), plasma cutting machine, 3-D printing machine and Fanuc-make welding robot.The department has also set up state of the art NI Lab and Robotics Lab. Using the extensive infrastructure available, the ASME student chapter at LNMIIT endeavors to promote extensive engineering design and fabrication skills dedicated to create innovative solutions in the field of Mechanical and Mechatronics Engineering. ',
-      img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80'
-    },
-    {
-      name: 'DR. VIKRAM SHARMA',
-      por: 'ASSOCIATE PROFESSOR, MME LNMIIT',
-      desc: ' ASME student chapter at LNMIIT, though only two years old, has already made its mark by earning the title of Outstanding start up section and by successfully bidding for the ASME E-Fest Asia Pacific 2017. The student team have shown enthusiasm in taking up projects and organizing workshops. The Mechanical and Mechatronics Engineering Department at LNMIIT has well equiped CAD lab with designing and computational software such as Solidworks, Ansys, MSC, Auto Desk, Robo Analyzer, VI-Rail and Matlab. The fabrication facilities in the workshop boasts of industrial grade machine tools such as vertical machining centre (VMC), plasma cutting machine, 3-D printing machine and Fanuc-make welding robot.The department has also set up state of the art NI Lab and Robotics Lab. ',
-      img: 'https://asme.lnmiit.ac.in/images/director.jpg'
-    },
-    {
-      name: 'DR. ASHOK DARGAR',
-      por: 'ASSOCIATE PROFESSOR, MME LNMIIT',
-      desc: 'No doubt ASME is a really reputed community for mechanical engineering students. This student chapter will help the students to develop their overall personality , to improve their communication skills, and to develop contacts. It will also helpful for student to plan their industrial visit, even for in placement and higher studies.',
-      img: 'https://asme.lnmiit.ac.in/images/vikram.jpg'
+      name: 'Dr. Vivek Kumar',
+      por: 'Student Section Advisor, ASME NSUT',
+      desc: 'It makes me proud to have the ASME Student Section at our University. ASME has a  global presence and helps  students to develop their overall personality, improve their communication skills and build connections. Having a student section of such an organisation at our university will enable students to get hands-on experience with practical usage of mechanical engineering. For that purpose we will be conducting various events, interactive workshops and competitions to accomplish the goal of the society and ASME at large.',
+      img: iconPath+'drvivekkumar.jpg'
     }
   ]
   const studentdata = [
     {
-      name: 'Vishal Singh Jadon',
-      por: 'Chair',
-      img: 'https://asme.lnmiit.ac.in/images/team/Vishal.jpg',
-      insta:'https://www.instagram.com/virat.kohli/?hl=en',
-      linkedin:'https://www.linkedin.com/in/williamhgates/'
+      name: 'Raghav Krishan Garg',
+      por: 'Chairperson',
+      img: iconPath+'Raghav Krishan Garg.jpg',
+      insta:'https://www.instagram.com/raghav.krishan/',
+      linkedin:'https://www.linkedin.com/in/raghavkrishan/'
     },
     {
-      name: 'Hash Bangur',
-      por: 'Vice Chair',
-      img: 'https://asme.lnmiit.ac.in/images/team/x4.jpg',
-      insta:'https://www.instagram.com/virat.kohli/?hl=en',
-      linkedin:'https://www.linkedin.com/in/williamhgates/'
+      name: 'Vandit Bawa',
+      por: 'Vice-Chair',
+      img: iconPath+'Vandit.jpg',
+      insta:'https://www.instagram.com/vandit_bawa/',
+      linkedin:'https://www.linkedin.com/in/vandit-bawa/'
     },
     {
-      name: 'Nisarg Bhatt',
+      name: 'Naman Kumar',
       por: 'Secretary',
-      img: 'https://asme.lnmiit.ac.in/images/team/x1.jpg',
-      insta:'https://www.instagram.com/virat.kohli/?hl=en',
-      linkedin:'https://www.linkedin.com/in/williamhgates/'
+      img: iconPath+'Naman Kumar.jpg',
+      insta:'http://instagram.com/namanograph/',
+      linkedin:'https://www.linkedin.com/in/namanxkumar/'
     },
     {
-      name: 'Mudti Parnami',
-      por: 'Event Planning Head',
-      img: 'https://asme.lnmiit.ac.in/images/team/x3.jpg',
-      insta:'https://www.instagram.com/virat.kohli/?hl=en',
-      linkedin:'https://www.linkedin.com/in/williamhgates/'
+      name: 'Shubham Garg',
+      por: 'Treasurer',
+      img: iconPath+'Shubham Garg_.png',
+      insta:'',
+      linkedin:'https://www.linkedin.com/in/shubham-garg-745b5916b/'
     },
     {
-      name: 'Vijay Singh Rathore',
-      por: 'Media And Publication head',
-      img: 'https://asme.lnmiit.ac.in/images/team/x2.jpg',
-      insta:'https://www.instagram.com/virat.kohli/?hl=en',
-      linkedin:'https://www.linkedin.com/in/williamhgates/'
+      name: 'Manish Singh',
+      por: 'Division Head - Marketing &  Event Management',
+      img: iconPath+'Manish Singh.png',
+      insta:'https://www.instagram.com/_manish_singh30/',
+      linkedin:'https://www.linkedin.com/in/manish-singh-897635215/'
+    },
+    {
+      name: 'Anushrey Singh',
+      por: 'Co - Head - Marketing & Event Management',
+      img: iconPath+'Anushrey Singh.jpg',
+      insta:'https://www.instagram.com/anushreysingh/',
+      linkedin:'https://www.linkedin.com/in/anushrey-singh-98335b227/'
+    },
+    {
+      name: 'Keshav Dahiya',
+      por: 'Division Head - Research and Technical Affairs',
+      img: iconPath+'KESHAV DAHIYA.jpg',
+      insta:'https://instagram.com/keshavdahiya03?igshid=NTdlMDg3MTY=/',
+      linkedin:'https://www.linkedin.com/in/keshav-dahiya-750068204/'
+    },
+    {
+      name: 'Akarsh Choudhary',
+      por: 'Mechanical Design Head',
+      img: iconPath+'Akarsh Choudhary.jpg',
+      insta:'',
+      linkedin:'https://www.linkedin.com/in/akarsh-choudhary'
+    },
+    {
+      name: 'Pranav Mehrotra',
+      por: 'Co-Head - Research and Technical Affairs',
+      img: iconPath+'Pranav.jpg',
+      insta:'https://instagram.com/pranav_v_mehrotra?igshid=NmQ2ZmYxZjA=/',
+      linkedin:'https://www.linkedin.com/in/pranav-mehrotra-b012ba105/'
+    },
+    {
+      name: 'Satya Pratik',
+      por: 'Division Head - Content Writing',
+      img: iconPath+'Satya Pratik.jpg',
+      insta:'https://www.instagram.com/pratike_10/',
+      linkedin:''
+    },
+    {
+      name: 'Mohd. Muaaz',
+      por: 'Division Head - Social Media',
+      img: iconPath+'Muaaz.jpg',
+      insta:'https://www.instagram.com/mohd._.muaaz_/',
+      linkedin:'https://www.linkedin.com/in/mohd-muaaz-4097461ba/'
+    },
+    {
+      name: 'Niyati Nandita',
+      por: 'Division Head - Graphic Design',
+      img: iconPath+'Niyati Nandita_.webp',
+      insta:'http://www.instagram.com/niyatinandita/',
+      linkedin:'https://www.linkedin.com/in/niyati-n-3b8490203/'
     }
   ]
 

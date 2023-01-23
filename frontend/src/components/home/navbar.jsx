@@ -52,16 +52,14 @@ function Nav() {
               <a class="mr-5 text-xl text-center hover:text-[#0C397D]" href="/">
                 Home
               </a>
-              <a
-                class="mr-5 text-xl text-center hover:text-[#0C397D]"
-                href="/about"
-              >
+              <a class="mr-5 text-xl text-center hover:text-[#0C397D]"
+                href="/about">
                 About
               </a>
-              <a
-                class="mr-5 text-xl text-center hover:text-[#0C397D]"
-                href="/gallery"
-              >
+              <a class="mr-5 text-xl text-center hover:text-[#0C397D]" href="/events">
+                Competitions
+              </a>
+              <a class="mr-5 text-xl text-center hover:text-[#0C397D]" href="/gallery">
                 Gallery
               </a>
 
@@ -99,6 +97,9 @@ function Nav() {
             </a>
             <a class="mr-5 hover:text-gray-900" href="/about">
               About
+            </a>
+            <a class="mr-5 hover:text-gray-900" href="/events">
+              Competitions
             </a>
             <a class="mr-5 hover:text-gray-900" href="/gallery">
               Gallery
