@@ -1,45 +1,50 @@
-import { useEffect, useState, useMemo } from "react";
-import { VscClose, VscChevronLeft, VscChevronRight } from "react-icons/vsc";
+import {React, useState, useEffect, useMemo} from 'react'
+import {VscClose, VscChevronLeft, VscChevronRight} from "react-icons/vsc"
+
+
 
 const ASMEgallery = () => {
     // Image source list: Source for all the images to be added should be mentioned here.
     const galleryImages = useMemo(
         () => [
             {
-                img: "https://source.unsplash.com/random/1",
+                img: "/GalleryImages/Rishita-1.jpg",
             },
             {
-                img: "https://source.unsplash.com/random/2",
+                img: "/GalleryImages/Rishita-3.jpg",
             },
             {
-                img: "https://source.unsplash.com/random/3",
+                img: "/GalleryImages/Rishita-7.jpg",
             },
             {
-                img: "https://source.unsplash.com/random/4",
+                img: "/GalleryImages/Rishita-11.jpg",
             },
             {
-                img: "https://source.unsplash.com/random/5",
+                img: "/GalleryImages/Rishita-12.jpg",
             },
             {
-                img: "https://source.unsplash.com/random/6",
+                img: "/GalleryImages/Rishita-13.jpg",
             },
             {
-                img: "https://source.unsplash.com/random/7",
+                img: "/GalleryImages/Rishita-15.jpg",
             },
             {
-                img: "https://source.unsplash.com/random/8",
+                img: "/GalleryImages/Rishita-16.jpg",
             },
             {
-                img: "https://source.unsplash.com/random/9",
+                img: "/GalleryImages/Rishita-17.jpg",
             },
             {
-                img: "https://source.unsplash.com/random/10",
+                img: "/GalleryImages/Rishita-18.jpg",
             },
             {
-                img: "https://source.unsplash.com/random/11",
+                img: "/GalleryImages/Rishita-19.jpg",
             },
             {
-                img: "https://source.unsplash.com/random/12",
+                img: "/GalleryImages/Rishita-20.jpg",
+            },
+            {
+                img: "/GalleryImages/Rishita-21.jpg",
             },
         ],
         []
@@ -265,7 +270,7 @@ const ASMEgallery = () => {
                                     key={index}
                                     onClick={() => handleOpenModal(index)}
                                     alt=""
-                                    className="object-none object-center animate-appear rounded hover:scale-125 duration-1000"
+                                    className="animate-appear rounded hover:scale-125 duration-1000"
                                 />
                             </div>
                         );
@@ -274,5 +279,4 @@ const ASMEgallery = () => {
         </div>
     );
 };
-
-export default ASMEgallery;
+export default ASMEgallery
