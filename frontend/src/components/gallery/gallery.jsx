@@ -8,40 +8,43 @@ const ASMEgallery = () => {
     const galleryImages = useMemo(
         () => [
             {
-                img: "https://source.unsplash.com/random/1",
+                img: "/GalleryImages/Rishita-1.jpg",
             },
             {
-                img: "https://source.unsplash.com/random/2",
+                img: "/GalleryImages/Rishita-3.jpg",
             },
             {
-                img: "https://source.unsplash.com/random/3",
+                img: "/GalleryImages/Rishita-7.jpg",
             },
             {
-                img: "https://source.unsplash.com/random/4",
+                img: "/GalleryImages/Rishita-11.jpg",
             },
             {
-                img: "https://source.unsplash.com/random/5",
+                img: "/GalleryImages/Rishita-12.jpg",
             },
             {
-                img: "https://source.unsplash.com/random/6",
+                img: "/GalleryImages/Rishita-13.jpg",
             },
             {
-                img: "https://source.unsplash.com/random/7",
+                img: "/GalleryImages/Rishita-15.jpg",
             },
             {
-                img: "https://source.unsplash.com/random/8",
+                img: "/GalleryImages/Rishita-16.jpg",
             },
             {
-                img: "https://source.unsplash.com/random/9",
+                img: "/GalleryImages/Rishita-17.jpg",
             },
             {
-                img: "https://source.unsplash.com/random/10",
+                img: "/GalleryImages/Rishita-18.jpg",
             },
             {
-                img: "https://source.unsplash.com/random/11",
+                img: "/GalleryImages/Rishita-19.jpg",
             },
             {
-                img: "https://source.unsplash.com/random/12",
+                img: "/GalleryImages/Rishita-20.jpg",
+            },
+            {
+                img: "/GalleryImages/Rishita-21.jpg",
             },
         ],
         []
@@ -267,7 +270,7 @@ const ASMEgallery = () => {
                                     key={index}
                                     onClick={() => handleOpenModal(index)}
                                     alt=""
-                                    className="object-none object-center animate-appear rounded hover:scale-125 duration-1000"
+                                    className="animate-appear rounded hover:scale-125 duration-1000"
                                 />
                             </div>
                         );
@@ -276,59 +279,4 @@ const ASMEgallery = () => {
         </div>
     );
 };
-
-export default ASMEgallery;
-                    <div className="w-[calc(100%-40px)] h-[calc(100%-40px)] flex items-center justify-center">
-                        <div
-                            id="one"
-                            className="w-[60vw] h-[700px] bg-transparent absolute transition-all overflow-hidden block-1"
-                        >
-                            <img
-                                className="object-contain w-full h-full"
-                                alt=""
-                            />
-                        </div>
-                        <div
-                            id="two"
-                            className="w-[60vw] h-[700px] bg-transparent absolute transition-all overflow-hidden block-2"
-                        >
-                            <img
-                                className="object-contain w-full h-full"
-                                alt=""
-                            />
-                        </div>
-                        <div
-                            id="three"
-                            className="w-[60vw] h-[700px] bg-transparent absolute transition-all overflow-hidden block-3"
-                        >
-                            <img
-                                className="object-contain w-full h-full"
-                                alt=""
-                            />
-                        </div>
-                    </div>
-                </div>
-            )}
-            <hr className="flex justify-center content-center mx-auto my-8 rounded-lg bg-blue-500 h-1 w-64" />
-            {/* Grid of images */}
-            <div className="place-items-center max-w-[250px] py-5 mb-7 gap-5 text-black mx-auto grid grid-cols-1 min-[425px]:grid-cols-2 min-[425px]:max-w-[400px] sm:grid-cols-3 sm:max-w-[600px]  md:grid-cols-4 md:max-w-[740px] lg:max-w-[950px] xl:max-w-[1200px]">
-                {galleryImages &&
-                    galleryImages.map((slide, index) => {
-                        return (
-                            <div className="overflow-hidden max-h-40 rounded min-[425px]:max-h-28 sm:grid-cols-3 sm:max-h-28 lg:max-h-36 xl:max-h-44">
-                                <img
-                                    src={slide.img}
-                                    key={index}
-                                    onClick={() => handleOpenModal(index)}
-                                    alt=""
-                                    className="object-none object-center animate-appear rounded hover:scale-125 duration-1000"
-                                />
-                            </div>
-                        );
-                    })}
-            </div>
-        </div>
-    );
-};
-
-export default ASMEgallery;
+export default ASMEgallery
