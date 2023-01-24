@@ -2,34 +2,11 @@ import React from "react";
 import "./home.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
-import { useRef } from "react";
-import emailjs from "@emailjs/browser";
 
 function Nav() {
   let [open, setOpen] = useState(true);
 
-  const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_rtx10be",
-        "template_j4mb7at",
-        form.current,
-        "SmfdSxlZE-q5n5a1t"
-      )
-
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
 
   return (
     <div>

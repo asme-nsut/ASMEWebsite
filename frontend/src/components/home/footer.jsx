@@ -1,6 +1,32 @@
 import React from "react";
+import emailjs from "@emailjs/browser";
+
 
 function footer() {
+
+  const form = React.createRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_3qo0abt",
+        "template_nvliv7q",
+        form.current,
+        "c5PD_jY3J0_oaP_PI"
+      )
+      // emailjs.sendForm('service_rtx10be', 'template_j4mb7at', form.current, 'SmfdSxlZE-q5n5a1t')
+
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div>
       <footer class="text-gray-600 body-font bg-gray-100">
@@ -67,8 +93,14 @@ function footer() {
               <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
                 SUBSCRIBE
               </h2>
-              <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
-                <form class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+              <div 
+               class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+                
+                
+                <form 
+                ref={form}
+              onSubmit={sendEmail}
+                class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
                   <label
                     for="footer-field"
                     class="leading-7 text-sm text-gray-600"
@@ -76,21 +108,22 @@ function footer() {
                     Email
                   </label>
                   <input
-                    type="text"
-                    id="footer-field"
-                    name="footer-field"
+                    type="email"
+                    id="user_email"
+                    name="email"
                     class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-blue-200 focus:border-blue-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
-                </form>
-                <input type="submit" name="submit" value="Join" class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">
+
+<input id="send"
+              type="submit"
+              value="Join" class="lg:mt-2 xl:mt-2 flex-shrink-0 inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">
                   
                 </input>
+
+                </form>
+                
               </div>
-              <p class="text-gray-500 text-sm mt-2 md:text-left text-center">
-                Bitters chicharrones fanny pack
-                <br class="lg:block hidden" />
-                waistcoat green juice
-              </p>
+              
             </div>
           </div>
         </div>
