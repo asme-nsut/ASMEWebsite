@@ -9,7 +9,7 @@ function home() {
           <div class="px-3 w-full lg:w-2/5">
             <div class="mx-auto mb-8 max-w-xl text-center lg:mx-0 lg:max-w-md lg:text-left">
               <h2 class="mb-4 text-4xl font-bold text-left lg:text-4xl text-center	lg:text-left">
-                What is<p></p>
+
                 <span class="text-5xl text-[#0C397D] leading-relaxeds">
                   American Society of Mechanical Engineers{" "}
                 </span>
@@ -17,9 +17,9 @@ function home() {
               <br></br>
 
                 <span class="text-5xl text-[#0C397D] leading-relaxeds">
-                  NSUT{" "}
+                  
                 </span>
-                ?
+                NSUT
               </h2>
 
               <p class="visible mx-0 mt-3 mb-0 text-sm leading-relaxed text-left text-slate-700 text-center lg:text-left">
@@ -105,7 +105,7 @@ function home() {
 
           <div class="flex flex-wrap -m-4  lg: justify-center ">
             <div class="xl:w-1/3 md:w-1/2 p-4 ">
-              <div class="border border-gray-200 p-6 rounded-lg">
+              <div class="border border-gray-200 p-6 rounded-lg  min-h-full">
                 <div class= "w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
                   <svg
                     fill="none"
