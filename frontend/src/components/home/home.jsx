@@ -54,7 +54,7 @@ function home() {
 
           <div class="px-5 mb-12 w-full lg:mb-0 lg:w-3/5 lg:block hidden">
             <div class="flex justify-center items-center">
-              <img class="ml-16" src="https://i.imgur.com/mtN4tc4.png"></img>
+              <img class="ml-16" src="https://i.imgur.com/mtN4tc4.png" alt="ml"></img>
             </div>
           </div>
         </section>

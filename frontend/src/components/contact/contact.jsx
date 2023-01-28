@@ -121,8 +121,7 @@ function contact() {
               class="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg"
             ></input>
             <p class="text-xs text-gray-500 mt-3">
-              Chicharrones blog helvetica normcore iceland tousled brook viral
-              artisan.
+            Thank you for visiting our website. If you have any questions or comments, please contact us using the information below. We are always happy to hear from you!
             </p>
           </form>
         </div>
