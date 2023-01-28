@@ -46,7 +46,7 @@ function home() {
                 Key Features
               </a>
 
-              <a class="block visible py-4 px-8 text-xs font-semibold leading-none bg-white rounded border border-solid cursor-pointer sm:inline-block border-slate-200 text-slate-500">
+              <a class="block visible py-4 px-8 text-xs font-semibold leading-none bg-white rounded border border-solid cursor-pointer sm:inline-block border-slate-200 text-slate-500" href="/about">
                 Our Team{" "}
               </a>
             </div>
@@ -99,7 +99,7 @@ function home() {
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-              Why ASME?
+              Why ASME NSUT?
             </h1>
           </div>
 
