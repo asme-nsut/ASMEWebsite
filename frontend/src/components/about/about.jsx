@@ -11,7 +11,7 @@ function about() {
       name: 'Prof. D K Singh',
       por: 'Patron ASME NSUT, HOD Mechanical Engineering, NSUT',
       desc: 'I feel immense pride to announce the establishment of the ASME student chapter at NSUT. I really appreciate the work ASME student chapter at NSUT puts into work and with this welcome you all. Through my experience, in the mechanical engineering field, I see the ASME student section as a valuable resource for students to get involved in the mechanical engineering community, gain hands-on experience and networking opportunities, and develop leadership skills. Also  the opportunities for collaboration and outreach that an ASME student section can provide is highly appreciable.',
-      img: 'https://asme.lnmiit.ac.in/images/director.jpg'
+      img: iconPath+'Prof. D K Singh.jpg'
     },
     {
       name: 'Dr. Vivek Kumar',
