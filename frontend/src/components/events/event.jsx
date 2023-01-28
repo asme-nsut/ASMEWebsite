@@ -31,7 +31,7 @@ function event() {
   <div class="text-center ">
       <h1 class="sm:text-3xl text-2xl title-font text-gray-900 mb-4 font-poppins font-black">Competitions</h1>
       <div class="flex mt-6 justify-center">
-        <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+        <div class="w-40 h-1 rounded-full bg-indigo-500 inline-flex"></div>
       </div>
     </div>
   <div class="container px-5 py-24 mx-auto">
