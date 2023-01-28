@@ -40,7 +40,7 @@ function home() {
 
             <div class="text-center lg:text-left mb-4">
               <a
-                href="#whyy"
+                href="#keyFeatures"
                 class="block visible py-4 px-8 mb-4 text-xs font-semibold tracking-wide leading-none text-white bg-[#0C397D] rounded cursor-pointer sm:mr-3 sm:mb-0 sm:inline-block"
               >
                 Key Features
@@ -59,7 +59,7 @@ function home() {
           </div>
         </section>
         <section
-          id="whyy"
+          id="keyFeatures"
           class="bg-image-parallax flex flex-col w-full h-[500px] bg-cover bg-fixed bg-center flex justify-center items-center"
         >
           <div class="text-gray-200 body-font">
