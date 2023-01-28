@@ -148,7 +148,7 @@ function about() {
         <div class="container px-5 py-10 mx-auto">
           <div id='faculty' class="flex flex-col text-center w-full mb-12">
             <h1 class="text-4xl title-font mb-4 text-gray-900 tracking-widest font-poppins font-black">Faculty Team</h1>
-          </div>
+          </div> 
           <div class="flex flex-wrap -m-4">
             {faculty}
           </div>
