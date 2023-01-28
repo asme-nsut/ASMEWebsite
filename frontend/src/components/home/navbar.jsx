@@ -33,8 +33,8 @@ function Nav() {
                 href="/about">
                 About
               </a>
-              <a class="mr-5 text-xl text-center hover:text-[#0C397D]" href="/competitions">
-                Competitions
+              <a class="mr-5 text-xl text-center hover:text-[#0C397D]" href="/events">
+                Events
               </a>
               <a class="mr-5 text-xl text-center hover:text-[#0C397D]" href="/gallery">
                 Gallery
@@ -75,7 +75,7 @@ function Nav() {
             <a class="mr-5 hover:text-gray-900" href="/about">
               About
             </a>
-            <a class="mr-5 hover:text-gray-900" href="/competitions">
+            <a class="mr-5 hover:text-gray-900" href="/events">
               Competitions
             </a>
             <a class="mr-5 hover:text-gray-900" href="/gallery">
