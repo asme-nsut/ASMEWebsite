@@ -132,7 +132,7 @@ function footer() {
         
         <span class="ml-3 text-xl">Devcomm</span>
       </a>
-      <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4 mx-10">© 2023 Devcomm —
+      <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4 mx-10 text-center">© 2023 Devcomm —
         <a href="https://www.devcomm.international/" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">Made with ❤️ by Devcomm</a>
       </p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
