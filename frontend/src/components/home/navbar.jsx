@@ -6,8 +6,6 @@ import { useState } from "react";
 function Nav() {
   let [open, setOpen] = useState(true);
 
-
-
   return (
     <div>
       <header class="text-gray-600 body-font ">
@@ -29,14 +27,22 @@ function Nav() {
               <a class="mr-5 text-xl text-center hover:text-[#0C397D]" href="/">
                 Home
               </a>
-              <a class="mr-5 text-xl text-center hover:text-[#0C397D]"
-                href="/about">
+              <a
+                class="mr-5 text-xl text-center hover:text-[#0C397D]"
+                href="/about"
+              >
                 About
               </a>
-              <a class="mr-5 text-xl text-center hover:text-[#0C397D]" href="/events">
+              <a
+                class="mr-5 text-xl text-center hover:text-[#0C397D]"
+                href="/events"
+              >
                 Events
               </a>
-              <a class="mr-5 text-xl text-center hover:text-[#0C397D]" href="/gallery">
+              <a
+                class="mr-5 text-xl text-center hover:text-[#0C397D]"
+                href="/gallery"
+              >
                 Gallery
               </a>
 
@@ -81,10 +87,17 @@ function Nav() {
             <a class="mr-5 hover:text-gray-900" href="/gallery">
               Gallery
             </a>
-          </nav>
-          <a href="/contact" class="hidden md:inline-flex items-center">
-            <button class="hidden md:inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 md:visible ">
+            <a class="mr-5 hover:text-gray-900" href="/contact">
               Contact
+            </a>
+          </nav>
+          <a
+            href="http://bit.ly/JoinASMENSUT"
+            target={"_blank"}
+            class="hidden md:inline-flex items-center"
+          >
+            <button class="hidden md:inline-flex items-center bg-blue-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 md:visible ">
+              <strong>Membership Form</strong>
               <svg
                 fill="none"
                 stroke="currentColor"
