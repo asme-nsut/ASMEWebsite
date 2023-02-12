@@ -52,10 +52,18 @@ function Nav() {
               >
                 Contact
               </a>
+              <a
+                class="mr-5 text-xl text-center hover:text-[#0C397D]"
+                href="http://bit.ly/JoinASMENSUT"
+                target={"_blank"}
+                style={{ fontWeight: "bold" }}
+              >
+                Membership Form
+              </a>
             </div>
 
             <hr></hr>
-
+            {/* 
             <div>
               <button class="hidden md:inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 md:visible ">
                 Contact
@@ -71,7 +79,7 @@ function Nav() {
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
               </button>
-            </div>
+            </div> */}
           </div>
 
           <nav class="hidden md:ml-auto md:flex flex-row items-center text-base justify-center md: flex-column">
