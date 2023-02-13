@@ -2,6 +2,8 @@ import React from "react";
 import "./home.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
+import { Link } from 'react-router-dom'
+
 
 function Nav() {
   let [open, setOpen] = useState(true);
@@ -11,7 +13,7 @@ function Nav() {
       <header class="text-gray-600 body-font ">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-left">
           <a
-            class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+            className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
             href="/"
           >
             <img
@@ -56,9 +58,8 @@ function Nav() {
                 class="mr-5 text-xl text-center hover:text-[#0C397D]"
                 href="http://bit.ly/JoinASMENSUT"
                 target={"_blank"}
-                style={{ fontWeight: "bold" }}
               >
-                Membership Form
+                Membership
               </a>
             </div>
 
@@ -105,7 +106,7 @@ function Nav() {
             class="hidden md:inline-flex items-center"
           >
             <button class="hidden md:inline-flex items-center bg-blue-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 md:visible ">
-              <strong>Membership Form</strong>
+              Membership
               <svg
                 fill="none"
                 stroke="currentColor"
