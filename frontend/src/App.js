@@ -5,23 +5,23 @@ import Gallery from "./components/gallery/gallery";
 import Nav from "./components/home/navbar";
 import Footer from "./components/home/footer";
 import Contact from "./components/contact/contact";
-import Events from "./components/events/event"
+import Events from "./components/events/event";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Nav></Nav>
       <BrowserRouter>
+        <Nav />
         <Routes>
-          <Route path="/" element={<Home></Home>}></Route>
-          <Route path="/about" element={<About></About>}></Route>
-          <Route path="/events" element={<Events></Events>}></Route>
-          <Route path="/gallery" element={<Gallery></Gallery>}></Route>
-          <Route path="/contact" element={<Contact></Contact>}></Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer></Footer>
     </div>
   );
 }

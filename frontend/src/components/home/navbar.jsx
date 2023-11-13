@@ -4,116 +4,100 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 import { Link } from 'react-router-dom'
 
-
 function Nav() {
   let [open, setOpen] = useState(true);
 
   return (
     <div>
-      <header class="text-gray-600 body-font ">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-left">
-          <a
+      <header className="text-gray-600 body-font ">
+        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-left">
+          <Link
+            to="/"
             className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
-            href="/"
           >
             <img
-              class="w-24 h-16 mt-2"
+              className="w-24 h-16 mt-2"
               src="https://i.imgur.com/Os73S9e.png"
               alt="asme logo"
             />
-          </a>
+          </Link>
 
-          <div class={`${open ? "hidden" : "md:hidden"}`}>
-            <div class="flex flex-col mr-1">
-              <hr></hr>
-              <a class="mr-5 text-xl text-center hover:text-[#0C397D]" href="/">
+          <div className={`${open ? "hidden" : "md:hidden"}`}>
+            <div className="flex flex-col mr-1">
+              <hr />
+              <Link
+                to="/"
+                className="mr-5 text-xl text-center hover:text-[#0C397D]"
+              >
                 Home
-              </a>
-              <a
-                class="mr-5 text-xl text-center hover:text-[#0C397D]"
-                href="/about"
+              </Link>
+              <Link
+                to="/about"
+                className="mr-5 text-xl text-center hover:text-[#0C397D]"
               >
                 About
-              </a>
-              <a
-                class="mr-5 text-xl text-center hover:text-[#0C397D]"
-                href="/events"
+              </Link>
+              <Link
+                to="/events"
+                className="mr-5 text-xl text-center hover:text-[#0C397D]"
               >
                 Events
-              </a>
-              <a
-                class="mr-5 text-xl text-center hover:text-[#0C397D]"
-                href="/gallery"
+              </Link>
+              <Link
+                to="/gallery"
+                className="mr-5 text-xl text-center hover:text-[#0C397D]"
               >
                 Gallery
-              </a>
-
-              <a
-                class="mr-5 text-xl text-center hover:text-[#0C397D]"
-                href="/Contact"
+              </Link>
+              <Link
+                to="/Contact"
+                className="mr-5 text-xl text-center hover:text-[#0C397D]"
               >
                 Contact
-              </a>
+              </Link>
               <a
-                class="mr-5 text-xl text-center hover:text-[#0C397D]"
-                href="http://bit.ly/JoinASMENSUT"
+                href="https://docs.google.com/spreadsheets/d/1fbdkPZyuRfxcLvfwRfiCkb28m3dB9Tio6TCrOW0d9gs/edit?usp=sharing"
                 target={"_blank"}
+                className="mr-5 text-xl text-center hover:text-[#0C397D]"
               >
-                Membership
+                Result
               </a>
             </div>
 
-            <hr></hr>
-            {/* 
-            <div>
-              <button class="hidden md:inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 md:visible ">
-                Contact
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 ml-1"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </button>
-            </div> */}
+            <hr />
           </div>
 
-          <nav class="hidden md:ml-auto md:flex flex-row items-center text-base justify-center md: flex-column">
-            <a class="mr-5 hover:text-gray-900" href="/">
+          <nav className="hidden md:ml-auto md:flex flex-row items-center text-base justify-center md: flex-column">
+            <Link to="/" className="mr-5 hover:text-gray-900">
               Home
-            </a>
-            <a class="mr-5 hover:text-gray-900" href="/about">
+            </Link>
+            <Link to="/about" className="mr-5 hover:text-gray-900">
               About
-            </a>
-            <a class="mr-5 hover:text-gray-900" href="/events">
+            </Link>
+            <Link to="/events" className="mr-5 hover:text-gray-900">
               Competitions
-            </a>
-            <a class="mr-5 hover:text-gray-900" href="/gallery">
+            </Link>
+            <Link to="/gallery" className="mr-5 hover:text-gray-900">
               Gallery
-            </a>
-            <a class="mr-5 hover:text-gray-900" href="/contact">
+            </Link>
+            <Link to="/contact" className="mr-5 hover:text-gray-900">
               Contact
-            </a>
+            </Link>
           </nav>
           <a
-            href="http://bit.ly/JoinASMENSUT"
+            href="https://docs.google.com/spreadsheets/d/1fbdkPZyuRfxcLvfwRfiCkb28m3dB9Tio6TCrOW0d9gs/edit?usp=sharing"
             target={"_blank"}
-            class="hidden md:inline-flex items-center"
+            className="hidden md:inline-flex items-center"
           >
-            <button class="hidden md:inline-flex items-center bg-blue-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 md:visible ">
-              Membership
+            <button className="hidden md:inline-flex items-center bg-blue-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 md:visible ">
+              Results
               <svg
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-4 h-4 ml-1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                className="w-4 h-4 ml-1"
                 viewBox="0 0 24 24"
               >
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -123,7 +107,7 @@ function Nav() {
 
           <div
             onClick={() => setOpen(!open)}
-            class="text-3xl absolute right-8 top-10 cursor-pointer md:hidden"
+            className="text-3xl absolute right-8 top-10 cursor-pointer md:hidden"
           >
             <h3>
               {" "}
