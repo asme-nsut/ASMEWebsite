@@ -50,18 +50,24 @@ function Nav() {
                 Gallery
               </Link>
               <Link
+                to="/alumni"
+                className="mr-5 text-xl text-center hover:text-[#0C397D]"
+              >
+                Alumni 
+              </Link>
+              <Link
                 to="/Contact"
                 className="mr-5 text-xl text-center hover:text-[#0C397D]"
               >
                 Contact
               </Link>
-              <a
-                href="https://docs.google.com/spreadsheets/d/1fbdkPZyuRfxcLvfwRfiCkb28m3dB9Tio6TCrOW0d9gs/edit?usp=sharing"
-                target={"_blank"}
-                className="mr-5 text-xl text-center hover:text-[#0C397D]"
-              >
-                Result
-              </a>
+                <a
+                  href="https://docs.google.com/spreadsheets/d/1fbdkPZyuRfxcLvfwRfiCkb28m3dB9Tio6TCrOW0d9gs/edit?usp=sharing"
+                  target={"_blank"}
+                  className="mr-5 text-xl text-center hover:text-[#0C397D]"
+                >
+                  Result
+                </a>
             </div>
 
             <hr />
@@ -79,6 +85,9 @@ function Nav() {
             </Link>
             <Link to="/gallery" className="mr-5 hover:text-gray-900">
               Gallery
+            </Link>
+            <Link to="/alumni" className="mr-5 hover:text-gray-900">
+              Alumni
             </Link>
             <Link to="/contact" className="mr-5 hover:text-gray-900">
               Contact

@@ -6,6 +6,7 @@ import Nav from "./components/home/navbar";
 import Footer from "./components/home/footer";
 import Contact from "./components/contact/contact";
 import Events from "./components/events/event";
+import Alumni from "./components/alumni/alumni";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/alumni" element={<Alumni />} />
         </Routes>
         <Footer />
       </BrowserRouter>

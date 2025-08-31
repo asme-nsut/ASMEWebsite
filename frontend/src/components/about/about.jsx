@@ -7,103 +7,125 @@ const iconPath = process.env.PUBLIC_URL + '/abimages/';
  
 function about() {
   const facultydata = [ 
-    {
-      name: 'Prof. D K Singh',
-      por: 'Patron ASME NSUT, HOD Mechanical Engineering, NSUT',
-      desc: 'I feel immense pride to announce the establishment of the ASME student chapter at NSUT. I really appreciate the work ASME student chapter at NSUT puts into work and with this welcome you all. Through my experience, in the mechanical engineering field, I see the ASME student section as a valuable resource for students to get involved in the mechanical engineering community, gain hands-on experience and networking opportunities, and develop leadership skills. Also  the opportunities for collaboration and outreach that an ASME student section can provide is highly appreciable.',
-      img: iconPath+'Prof. D K Singh.jpg'
-    },
+    
     {
       name: 'Dr. Vivek Kumar',
       por: 'Student Section Advisor, ASME NSUT',
       desc: 'It makes me proud to have the ASME Student Section at our University. ASME has a  global presence and helps  students to develop their overall personality, improve their communication skills and build connections. Having a student section of such an organisation at our university will enable students to get hands-on experience with practical usage of mechanical engineering. For that purpose we will be conducting various events, interactive workshops and competitions to accomplish the goal of the society and ASME at large.',
-      img: iconPath+'drvivekkumar.jpg'
-    }
+      img: iconPath+'vkr.jpg'
+    },
+    {
+      name: 'Prof. D K Singh',
+      por: 'Patron ASME NSUT, HOD Mechanical Engineering, NSUT',
+      desc: 'I feel immense pride to announce the establishment of the ASME student chapter at NSUT. I really appreciate the work ASME student chapter at NSUT puts into work and with this welcome you all. Through my experience, in the mechanical engineering field, I see the ASME student section as a valuable resource for students to get involved in the mechanical engineering community, gain hands-on experience and networking opportunities, and develop leadership skills. Also  the opportunities for collaboration and outreach that an ASME student section can provide is highly appreciable.',
+      img: iconPath+'dks.jpg'
+    },
   ]
   const studentdata = [
     {
-      name: 'Raghav Krishan Garg',
-      por: 'Chairperson',
-      img: iconPath+'Raghav Krishan Garg.jpg',
-      insta:'https://www.instagram.com/raghav.krishan/',
-      linkedin:'https://www.linkedin.com/in/raghavkrishan/'
+      name: 'Aman Malhotra',
+      por: 'CHAIRPERSON',
+      img: iconPath+'2025_1.jpg',
+      insta:'https://www.instagram.com/amanmalhotra_1708?igsh=MTI5aXZ0OXprYXNlZw==',
+      linkedin:'https://www.linkedin.com/in/aman-malhotra-252222221'
     },
     {
-      name: 'Vandit Bawa',
-      por: 'Vice-Chair',
-      img: iconPath+'Vandit.jpg',
-      insta:'https://www.instagram.com/vandit_bawa/',
-      linkedin:'https://www.linkedin.com/in/vandit-bawa/'
+      name: 'Nikita Prasad',
+      por: 'VICE CHAIRPERSON',
+      img: iconPath+'2025_2.jpg',
+      insta:'https://www.instagram.com/nikitzzz_034/',
+      linkedin:'https://www.linkedin.com/in/nikita-prasad-945517205/'
     },
     {
-      name: 'Naman Kumar',
-      por: 'Secretary',
-      img: iconPath+'Naman Kumar.jpg',
-      insta:'http://instagram.com/namanograph/',
-      linkedin:'https://www.linkedin.com/in/namanxkumar/'
+      name: 'Suhani Mehndiratta',
+      por: 'GENERAL SECRETARY',
+      img: iconPath+'2025_3.jpg',
+      insta:'https://www.instagram.com/suhanii_2004/',
+      linkedin:'https://www.linkedin.com/in/suhani-mehndiratta-94b93b253/'
     },
     {
-      name: 'Shubham Garg',
-      por: 'Treasurer',
-      img: iconPath+'Shubham Garg_.png',
+      name: 'Kunal Vijay',
+      por: 'TREASURER',
+      img: iconPath+'2025_4.jpeg',
+      insta:'https://www.instagram.com/kunalvijay77/',
+      linkedin:'https://www.linkedin.com/in/kunal-vijay-846bab189/'
+    },
+    {
+      name: 'Hiten Solanki',
+      por: 'JOINT SECRETARY',
+      img: iconPath+'2025_5.jpg',
+      insta:'https://www.instagram.com/hitenn_solanki',
+      linkedin:'https://www.linkedin.com/in/hiten-solanki-75380826b'
+    },
+    {
+      name: 'Vivek Sharma',
+      por: 'RESEARCH AND DEVELOPMENT HEAD',
+      img: iconPath+'2025_6.jpg',
+      insta:'https://www.instagram.com/viveks0918?igsh=MWdpZnVydXpsemh2OA%3D%3D&utm_source=qr',
+      linkedin:'http://www.linkedin.com/in/vivek-sharma-04634a30a'
+    },
+    {
+      name: 'Shubham Yadav',
+      por: 'WEB AND TECH INFRASTRUCTURE HEAD',
+      img: iconPath+'2025_7.jpg',
+      insta:'https://www.instagram.com/_shubham_140/',
+      linkedin:'https://www.linkedin.com/in/shubham-kumar-6a187b2ba/'
+    },
+    {
+      name: 'Gaurang Santoria',
+      por: 'OPERATIONS HEAD',
+      img: iconPath+'2025_8.jpg',
+      insta:'https://www.instagram.com/gaurangsantoria/',
+      linkedin:'https://www.linkedin.com/in/gaurang-santoria-644733217/'
+    },
+    {
+      name: 'Deepak Thakur',
+      por: 'DESIGN AND INNOVATION HEAD',
+      img: iconPath+'2025_9.jpg',
       insta:'',
-      linkedin:'https://www.linkedin.com/in/shubham-garg-745b5916b/'
-    },
-    {
-      name: 'Manish Singh',
-      por: 'Division Head - Marketing &  Event Management',
-      img: iconPath+'Manish Singh.png',
-      insta:'https://www.instagram.com/_manish_singh30/',
-      linkedin:'https://www.linkedin.com/in/manish-singh-897635215/'
-    },
-    {
-      name: 'Anushrey Singh',
-      por: 'Co - Head - Marketing & Event Management',
-      img: iconPath+'Anushrey Singh.jpg',
-      insta:'https://www.instagram.com/anushreysingh/',
-      linkedin:'https://www.linkedin.com/in/anushrey-singh-98335b227/'
-    },
-    {
-      name: 'Keshav Dahiya',
-      por: 'Division Head - Research and Technical Affairs',
-      img: iconPath+'KESHAV DAHIYA.jpg',
-      insta:'https://instagram.com/keshavdahiya03?igshid=NTdlMDg3MTY=/',
-      linkedin:'https://www.linkedin.com/in/keshav-dahiya-750068204/'
-    },
-    {
-      name: 'Akarsh Choudhary',
-      por: 'Mechanical Design Head',
-      img: iconPath+'Akarsh Choudhary.jpg',
-      insta:'',
-      linkedin:'https://www.linkedin.com/in/akarsh-choudhary'
-    },
-    {
-      name: 'Pranav Mehrotra',
-      por: 'Co-Head - Research and Technical Affairs',
-      img: iconPath+'Pranav.jpg',
-      insta:'https://instagram.com/pranav_v_mehrotra?igshid=NmQ2ZmYxZjA=/',
-      linkedin:'https://www.linkedin.com/in/pranav-mehrotra-b012ba105/'
-    },
-    {
-      name: 'Satya Pratik',
-      por: 'Division Head - Content Writing',
-      img: iconPath+'Satya Pratik.jpg',
-      insta:'https://www.instagram.com/pratike_10/',
       linkedin:''
     },
     {
-      name: 'Mohd. Muaaz',
-      por: 'Division Head - Social Media',
-      img: iconPath+'Muaaz.jpg',
-      insta:'https://www.instagram.com/mohd._.muaaz_/',
-      linkedin:'https://www.linkedin.com/in/mohd-muaaz-4097461ba/'
+      name: 'Diksha Yadav',
+      por: 'MEDIA AND COMMUNICATIONS HEAD',
+      img: iconPath+'2025_10.jpg',
+      insta:'https://www.instagram.com/dikshaaa_yadavv?igsh=MXZmbTh6YzgzN2Vjeg==',
+      linkedin:'https://www.linkedin.com/in/diksha-yadav-835978260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
     {
-      name: 'Niyati Nandita',
-      por: 'Division Head - Graphic Design',
-      img: iconPath+'Niyati Nandita_.webp',
-      insta:'http://www.instagram.com/niyatinandita/',
-      linkedin:'https://www.linkedin.com/in/niyati-n-3b8490203/'
+      name: 'Dev Bansal',
+      por: 'OUTREACH HEAD',
+      img: iconPath+'2025_11.jpg',
+      insta:'https://www.instagram.com/devbansal1?igsh=MWVkeWkwM3IyMXB6YQ==',
+      linkedin:'https://www.linkedin.com/in/dev-bansal121?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+    },
+    {
+      name: 'Kartik Yadav',
+      por: 'DIVISIONS HEAD',
+      img: iconPath+'2025_12.png',
+      insta:'https://www.instagram.com/kartikrao_28?igsh=YmR3cG41aGJqeTNs',
+      linkedin:'https://www.linkedin.com/in/kartik-yadav-78a660260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+    },
+    {
+      name: 'Aditya Yadav',
+      por: 'LOGISTICS HEAD',
+      img: iconPath+'2025_13.jpg',
+      insta:'https://www.instagram.com/ig_adityayadav?igsh=MmpweG9xZTF1OGp3&utm_source=qr',
+      linkedin:'https://www.linkedin.com/in/aditya-yadav-042279259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
+    },
+    {
+      name: 'Suryanshi Chauhan',
+      por: 'MANAGEMENT HEAD',
+      img: iconPath+'2025_14.jpg',
+      insta:'https://www.instagram.com/suryanshi_chauhan459?igsh=cHpyZ2U4aXVoZW1m',
+      linkedin:'https://www.linkedin.com/in/suryanshi-chauhan-b5a888282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+    },
+    {
+      name: 'Divansh Bansal',
+      por: 'EVENT & PUBLIC RELATIONS HEAD',
+      img: iconPath+'2025_15.jpg',
+      insta:'https://www.instagram.com/div_bansal20/profilecard/?igsh=bWF5ZmVybXlucDBw',
+      linkedin:'https://www.linkedin.com/in/divanshbansal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
     }
   ]
 
@@ -147,7 +169,7 @@ function about() {
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-10 mx-auto">
           <div id='faculty' class="flex flex-col text-center w-full mb-12">
-            <h1 class="text-4xl title-font mb-4 text-gray-900 tracking-widest font-poppins font-black">Faculty Team</h1>
+            <h1 class="text-4xl title-font mb-4 text-gray-900 tracking-widest font-poppins font-black">Faculty Incharge</h1>
           </div> 
           <div class="flex flex-wrap -m-4">
             {faculty}

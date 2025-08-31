@@ -1,282 +1,270 @@
-import {React, useState, useEffect, useMemo} from 'react'
-import {VscClose, VscChevronLeft, VscChevronRight} from "react-icons/vsc"
-
-
+import React, { useState, useMemo } from "react";
+import { VscClose, VscChevronLeft, VscChevronRight } from "react-icons/vsc";
 
 const ASMEgallery = () => {
-    // Image source list: Source for all the images to be added should be mentioned here.
-    const galleryImages = useMemo(
-        () => [
-            {
-                img: "/GalleryImages/Rishita-1.jpg",
-            },
-            {
-                img: "/GalleryImages/Rishita-3.jpg",
-            },
-            {
-                img: "/GalleryImages/Rishita-7.jpg",
-            },
-            {
-                img: "/GalleryImages/Rishita-11.jpg",
-            },
-            {
-                img: "/GalleryImages/Rishita-12.jpg",
-            },
-            {
-                img: "/GalleryImages/Rishita-13.jpg",
-            },
-            {
-                img: "/GalleryImages/Rishita-15.jpg",
-            },
-            {
-                img: "/GalleryImages/Rishita-16.jpg",
-            },
-            {
-                img: "/GalleryImages/Rishita-17.jpg",
-            },
-            {
-                img: "/GalleryImages/Rishita-18.jpg",
-            },
-            {
-                img: "/GalleryImages/Rishita-19.jpg",
-            },
-            {
-                img: "/GalleryImages/Rishita-20.jpg",
-            },
-            {
-                img: "/GalleryImages/Rishita-21.jpg",
-            },
-        ],
-        []
+  // Group images by year (unordered object, we'll sort when rendering)
+  const galleryImagesByYear = useMemo(
+    () => ({
+      2025: [
+        { img: "/GalleryImages/2025/2025_gallery_1.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_2.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_3.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_4.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_5.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_6.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_7.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_8.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_9.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_10.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_11.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_12.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_13.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_14.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_15.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_16.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_17.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_18.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_19.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_20.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_21.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_22.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_23.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_24.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_25.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_26.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_27.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_28.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_29.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_30.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_31.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_32.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_33.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_34.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_35.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_36.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_37.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_38.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_39.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_40.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_41.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_42.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_43.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_44.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_45.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_46.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_47.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_48.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_49.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_50.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_51.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_52.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_53.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_54.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_55.jpg" },
+        { img: "/GalleryImages/2025/2025_gallery_56.jpg" },
+
+
+      ],
+      2024: [
+        { img: "/GalleryImages/2024/2024_gallery_1.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_2.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_3.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_4.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_5.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_6.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_7.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_8.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_9.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_10.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_11.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_12.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_13.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_14.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_15.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_16.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_17.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_18.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_19.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_20.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_21.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_22.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_23.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_24.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_25.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_26.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_27.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_28.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_29.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_30.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_31.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_32.jpg" },
+        { img: "/GalleryImages/2024/2024_gallery_33.jpg" },
+
+
+      ],
+      2023: [
+        { img: "/GalleryImages/2023/2023_gallery_1.jpg" },
+        { img: "/GalleryImages/2023/2023_gallery_2.jpg" },
+        { img: "/GalleryImages/2023/2023_gallery_3.jpg" },
+        { img: "/GalleryImages/2023/2023_gallery_4.jpg" },
+        { img: "/GalleryImages/2023/2023_gallery_5.jpg" },
+        { img: "/GalleryImages/2023/2023_gallery_6.jpg" },
+        { img: "/GalleryImages/2023/2023_gallery_7.jpg" },
+        { img: "/GalleryImages/2023/2023_gallery_8.jpg" },
+
+        
+
+        
+      ],
+      2022: [
+        { img: "/GalleryImages/2022/2022_gallery_1.jpg" },
+        { img: "/GalleryImages/2022/2022_gallery_2.jpg" },
+        { img: "/GalleryImages/2022/2022_gallery_3.jpg" },
+        { img: "/GalleryImages/2022/2022_gallery_4.jpg" },
+        { img: "/GalleryImages/2022/2022_gallery_5.jpg" },
+        { img: "/GalleryImages/2022/2022_gallery_6.jpg" },
+        { img: "/GalleryImages/2022/2022_gallery_7.jpg" },
+        { img: "/GalleryImages/2022/2022_gallery_8.jpg" },
+        { img: "/GalleryImages/2022/2022_gallery_9.jpg" },
+        { img: "/GalleryImages/2022/2022_gallery_10.jpg" },
+        { img: "/GalleryImages/2022/2022_gallery_11.jpg" },
+        { img: "/GalleryImages/2022/2022_gallery_12.jpg" },
+        { img: "/GalleryImages/2022/2022_gallery_13.jpg" },
+        { img: "/GalleryImages/2022/2022_gallery_14.jpg" },
+        { img: "/GalleryImages/2022/2022_gallery_15.jpg" },
+        { img: "/GalleryImages/2022/2022_gallery_16.jpg" },
+        { img: "/GalleryImages/2022/2022_gallery_17.jpg" },
+        { img: "/GalleryImages/2022/2022_gallery_18.jpg" },
+        { img: "/GalleryImages/2022/2022_gallery_19.jpg" },
+        { img: "/GalleryImages/2022/2022_gallery_20.jpg" },
+        { img: "/GalleryImages/2022/2022_gallery_21.jpg" },
+        { img: "/GalleryImages/2022/2022_gallery_22.jpg" },
+        { img: "/GalleryImages/2022/2022_gallery_23.jpg" },
+
+      ],
+    }),
+    []
+  );
+
+  // Sort years descending, then flatten for easy modal navigation
+  const sortedEntries = useMemo(
+    () =>
+      Object.entries(galleryImagesByYear).sort(
+        (a, b) => Number(b[0]) - Number(a[0])
+      ),
+    [galleryImagesByYear]
+  );
+
+  const galleryImages = useMemo(
+    () => sortedEntries.flatMap(([_, imgs]) => imgs),
+    [sortedEntries]
+  );
+
+  const [slideNumber, setSlideNumber] = useState(0);
+  const [openModal, setOpenModal] = useState(false);
+
+  // Open modal with selected image index
+  const handleOpenModal = (index) => {
+    setSlideNumber(index);
+    setOpenModal(true);
+  };
+
+  // Close modal
+  const handleCloseModal = () => {
+    setOpenModal(false);
+  };
+
+  // Previous slide index (wrap-around)
+  const prevSlide = () => {
+    setSlideNumber((prev) =>
+      prev === 0 ? galleryImages.length - 1 : prev - 1
     );
+  };
 
-    // States for carousel
-    const [slideNumber, setSlideNumber] = useState(0);
-    const [prevslideNumber, setPrevSlideNumber] = useState(
-        galleryImages.length - 1
+  // Next slide index (wrap-around)
+  const nextSlide = () => {
+    setSlideNumber((prev) =>
+      prev === galleryImages.length - 1 ? 0 : prev + 1
     );
-    const [nextslideNumber, setNextSlideNumber] = useState(1);
-    const [openModal, setOpenModal] = useState(false);
+  };
 
-    // Functions for carousel
-    const handleOpenModal = (index) => {
-        console.log("clicked");
-        setSlideNumber(index);
-        setOpenModal(true);
-        index === 0
-            ? setPrevSlideNumber(galleryImages.length - 1)
-            : setPrevSlideNumber(index - 1);
-        index === galleryImages.length - 1
-            ? setNextSlideNumber(0)
-            : setNextSlideNumber(index + 1);
-    };
-    useEffect(() => {
-        if (openModal) {
-            document.querySelector(".block-1 img").src =
-                galleryImages[prevslideNumber].img;
-            document.querySelector(".block-2 img").src =
-                galleryImages[slideNumber].img;
-            document.querySelector(".block-3 img").src =
-                galleryImages[nextslideNumber].img;
-        }
-    }, [
-        openModal,
-        galleryImages,
-        prevslideNumber,
-        slideNumber,
-        nextslideNumber,
-    ]);
-    const handleCloseModal = () => {
-        setOpenModal(false);
-    };
+  return (
+    <div className="flex flex-col justify-center items-center">
+      <h1 className="text-7xl mt-5 font-semibold text-gray-900">Gallery</h1>
 
-    const prevSlide = () => {
-        slideNumber === 0
-            ? setSlideNumber(galleryImages.length - 1)
-            : setSlideNumber(slideNumber - 1);
-        prevslideNumber === 0
-            ? setPrevSlideNumber(galleryImages.length - 1)
-            : setPrevSlideNumber(prevslideNumber - 1);
-        nextslideNumber === 0
-            ? setNextSlideNumber(galleryImages.length - 1)
-            : setNextSlideNumber(nextslideNumber - 1);
-        document.querySelector(".block-1 img").src =
-            galleryImages[prevslideNumber].img;
-        document.querySelector(".block-2 img").src =
-            galleryImages[slideNumber].img;
-        document.querySelector(".block-3 img").src =
-            galleryImages[nextslideNumber].img;
-    };
-
-    const nextSlide = () => {
-        slideNumber === galleryImages.length - 1
-            ? setSlideNumber(0)
-            : setSlideNumber(slideNumber + 1);
-        prevslideNumber === galleryImages.length - 1
-            ? setPrevSlideNumber(0)
-            : setPrevSlideNumber(prevslideNumber + 1);
-        nextslideNumber === galleryImages.length - 1
-            ? setNextSlideNumber(0)
-            : setNextSlideNumber(nextslideNumber + 1);
-        document.querySelector(".block-1 img").src =
-            galleryImages[prevslideNumber].img;
-        document.querySelector(".block-2 img").src =
-            galleryImages[slideNumber].img;
-        document.querySelector(".block-3 img").src =
-            galleryImages[nextslideNumber].img;
-    };
-    // Functions for animation of carousel
-    const prevchange = () => {
-        if (document.getElementById("one").classList.contains("block-1")) {
-            document
-                .getElementById("one")
-                .classList.replace("block-1", "block-2");
-            document
-                .getElementById("two")
-                .classList.replace("block-2", "block-3");
-            document
-                .getElementById("three")
-                .classList.replace("block-3", "block-1");
-        } else if (
-            document.getElementById("one").classList.contains("block-2")
-        ) {
-            document
-                .getElementById("one")
-                .classList.replace("block-2", "block-3");
-            document
-                .getElementById("two")
-                .classList.replace("block-3", "block-1");
-            document
-                .getElementById("three")
-                .classList.replace("block-1", "block-2");
-        } else {
-            document
-                .getElementById("one")
-                .classList.replace("block-3", "block-1");
-            document
-                .getElementById("two")
-                .classList.replace("block-1", "block-2");
-            document
-                .getElementById("three")
-                .classList.replace("block-2", "block-3");
-        }
-    };
-    const nextchange = () => {
-        if (document.getElementById("one").classList.contains("block-1")) {
-            document
-                .getElementById("one")
-                .classList.replace("block-1", "block-3");
-            document
-                .getElementById("two")
-                .classList.replace("block-2", "block-1");
-            document
-                .getElementById("three")
-                .classList.replace("block-3", "block-2");
-        } else if (
-            document.getElementById("one").classList.contains("block-2")
-        ) {
-            document
-                .getElementById("one")
-                .classList.replace("block-2", "block-1");
-            document
-                .getElementById("two")
-                .classList.replace("block-3", "block-2");
-            document
-                .getElementById("three")
-                .classList.replace("block-1", "block-3");
-        } else {
-            document
-                .getElementById("one")
-                .classList.replace("block-3", "block-2");
-            document
-                .getElementById("two")
-                .classList.replace("block-1", "block-3");
-            document
-                .getElementById("three")
-                .classList.replace("block-2", "block-1");
-        }
-    };
-
-    return (
-        <div className="flex flex-col justify-center content-center justify-items-center">
-            <h1 className="flex justify-center content-center text-7xl mt-5 font-semibold text-gray-900">
-                Gallery
-            </h1>
-            {/* Carousel */}
-            {openModal && (
-                <div class="fixed top-0 left-0 right-0 bottom-0 flex flex-row items-center justify-center z-50 max-w-full max-h-full bg-stone-900/[0.7]">
-                    <button className="z-20" onClick={handleCloseModal}>
-                        <VscClose className="fixed cursor-pointer top-2 right-2 h-10 w-10 text-white transition-all hover:text-blue-500 md:top-5 md:right-5" />
-                    </button>
-                    <button
-                        className="z-20"
-                        onClick={() => {
-                            prevSlide();
-                            prevchange();
-                        }}
-                    >
-                        <VscChevronLeft className="fixed cursor-pointer top-1/2 left-2 h-10 w-10 text-white transition-all hover:text-blue-500 md:left-5" />
-                    </button>
-                    <button
-                        className="z-20"
-                        onClick={() => {
-                            nextSlide();
-                            nextchange();
-                        }}
-                    >
-                        <VscChevronRight className="fixed cursor-pointer top-1/2 right-2 h-10 w-10 text-white transition-all hover:text-blue-500 md:right-5" />
-                    </button>
-
-                    <div className="w-[calc(100%-40px)] h-[calc(100%-40px)] flex items-center justify-center">
-                        <div
-                            id="one"
-                            className="w-[60vw] h-[700px] bg-transparent absolute transition-all overflow-hidden block-1"
-                        >
-                            <img
-                                className="object-contain w-full h-full"
-                                alt=""
-                            />
-                        </div>
-                        <div
-                            id="two"
-                            className="w-[60vw] h-[700px] bg-transparent absolute transition-all overflow-hidden block-2"
-                        >
-                            <img
-                                className="object-contain w-full h-full"
-                                alt=""
-                            />
-                        </div>
-                        <div
-                            id="three"
-                            className="w-[60vw] h-[700px] bg-transparent absolute transition-all overflow-hidden block-3"
-                        >
-                            <img
-                                className="object-contain w-full h-full"
-                                alt=""
-                            />
-                        </div>
-                    </div>
-                </div>
-            )}
-            <hr className="flex justify-center content-center mx-auto my-8 rounded-lg bg-blue-500 h-1 w-64" />
-            {/* Grid of images */}
-            <div className="place-items-center max-w-[250px] py-5 mb-7 gap-5 text-black mx-auto grid grid-cols-1 min-[425px]:grid-cols-2 min-[425px]:max-w-[400px] sm:grid-cols-3 sm:max-w-[600px]  md:grid-cols-4 md:max-w-[740px] lg:max-w-[950px] xl:max-w-[1200px]">
-                {galleryImages &&
-                    galleryImages.map((slide, index) => {
-                        return (
-                            <div className="overflow-hidden max-h-40 rounded min-[425px]:max-h-28 sm:grid-cols-3 sm:max-h-28 lg:max-h-36 xl:max-h-44">
-                                <img
-                                    src={slide.img}
-                                    key={index}
-                                    onClick={() => handleOpenModal(index)}
-                                    alt=""
-                                    className="animate-appear rounded hover:scale-125 duration-1000"
-                                />
-                            </div>
-                        );
-                    })}
-            </div>
+      {/* Modal */}
+      {openModal && (
+        <div className="fixed inset-0 flex items-center justify-center z-50 bg-stone-900/70">
+          <button
+            onClick={handleCloseModal}
+            className="absolute top-5 right-5 text-white text-4xl hover:text-blue-500 z-50"
+            aria-label="Close modal"
+          >
+            <VscClose />
+          </button>
+          <button
+            onClick={prevSlide}
+            className="absolute left-5 top-1/2 transform -translate-y-1/2 text-white text-4xl hover:text-blue-500 z-50"
+            aria-label="Previous"
+          >
+            <VscChevronLeft />
+          </button>
+          <button
+            onClick={nextSlide}
+            className="absolute right-5 top-1/2 transform -translate-y-1/2 text-white text-4xl hover:text-blue-500 z-50"
+            aria-label="Next"
+          >
+            <VscChevronRight />
+          </button>
+          <div className="max-w-[90vw] max-h-[90vh] flex items-center justify-center">
+            <img
+              src={galleryImages[slideNumber].img}
+              alt={`Gallery image ${slideNumber + 1}`}
+              className="max-w-full max-h-full rounded"
+            />
+          </div>
         </div>
-    );
+      )}
+
+      <hr className="my-8 rounded-lg bg-blue-500 h-1 w-64" />
+
+      {/* Images grouped by year in descending order */}
+      {sortedEntries.map(([year, images], yearIndex) => {
+        const prevCount = sortedEntries
+          .slice(0, yearIndex)
+          .reduce((acc, [_, imgs]) => acc + imgs.length, 0);
+
+        return (
+          <div key={year} className="w-full max-w-[1200px] px-4 mb-10">
+            <h2 className="text-3xl font-semibold mb-5">{year}</h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
+              {images.map((slide, index) => {
+                const flatIndex = prevCount + index;
+                return (
+                  <div
+                    key={flatIndex}
+                    className="overflow-hidden rounded cursor-pointer max-h-44"
+                    onClick={() => handleOpenModal(flatIndex)}
+                    role="button"
+                    tabIndex={0}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter") handleOpenModal(flatIndex);
+                    }}
+                  >
+                    <img
+                      src={slide.img}
+                      alt={`Image from year ${year}`}
+                      className="object-cover w-full h-full rounded hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
 };
-export default ASMEgallery
+
+export default ASMEgallery;
