@@ -111,6 +111,8 @@ const ASMEgallery = () => {
                 { img: "/GalleryImages/2023/2023_gallery_6.jpg" },
                 { img: "/GalleryImages/2023/2023_gallery_7.jpg" },
                 { img: "/GalleryImages/2023/2023_gallery_8.jpg" },
+                { img: "/GalleryImages/2023/2023_gallery_9.jpg" },
+                { img: "/GalleryImages/2023/2023_gallery_10.jpg" },
 
 
 
