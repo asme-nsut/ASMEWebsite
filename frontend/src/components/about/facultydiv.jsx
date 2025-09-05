@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import 'aos/dist/aos.css';
 
 function FacultyDiv({ items, facultyId }) {
   useEffect(() => {
@@ -18,7 +18,7 @@ function FacultyDiv({ items, facultyId }) {
     >
       <img
         alt="team"
-        className="flex-shrink-0 p-8 lg:p-0 rounded-[50px] lg:rounded-[10px] w-80 h-full max-h-[330px] object-cover object-center sm:mb-0"
+        className="flex-shrink-0 p-8 lg:p-0 rounded-[50px] lg:rounded-[10px] w-auto h-[300px] object-cover object-center sm:mb-0"
         src={items.img}
       />
       <div className="flex-grow pl-8">
@@ -34,7 +34,7 @@ function FacultyDiv({ items, facultyId }) {
     >
       <img
         alt="team"
-        className="flex-shrink-0 p-8 lg:p-0 rounded-[50px] lg:rounded-[10px] w-80 h-full max-h-[330px] object-cover object-center sm:mb-0"
+        className="flex-shrink-0 p-8 lg:p-0 rounded-[50px] lg:rounded-[10px] w-auto h-[300px] object-cover object-center sm:mb-0"
         src={items.img}
       />
       <div className="flex-grow md:pr-8">
