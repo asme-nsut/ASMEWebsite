@@ -1,5 +1,4 @@
-import React from 'react';
-import 'aos/dist/aos.css';
+// import 'aos/dist/aos.css';
 
 // Using { details } as the prop is a clean way to pass the person's data.
 export default function AlumniCard({ details }) {
