@@ -1,14 +1,13 @@
-import React from "react";
 import Typewriter from "typewriter-effect";
 
 function Home() {
   return (
     <div>
       <main className="herohero flex flex-col items-center justify-center pt-8">
-        <section className="flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full lg:max-w-screen-lg sm:max-w-screen-sm md:max-w-screen-md pb-20">
+        <section className="flex flex-wrap items-center font-sans px-4 mx-auto w-full lg:max-w-screen-lg sm:max-w-screen-sm md:max-w-screen-md pb-20">
           <div className="px-3 w-full lg:w-2/5">
             <div className="mx-auto mb-8 max-w-xl text-center lg:mx-0 lg:max-w-md lg:text-left">
-              <h2 className="mb-4 text-4xl font-bold text-left lg:text-4xl text-center lg:text-left">
+              <h2 className="mb-4 text-4xl font-bold lg:text-4xl text-center lg:text-left">
                 <span className="text-5xl text-[#0C397D] leading-relaxeds">
                   American Society of Mechanical Engineers{" "}
                 </span>
@@ -16,7 +15,7 @@ function Home() {
                 <span className="text-5xl text-[#0C397D] leading-relaxeds"></span>
                 NSUT
               </h2>
-              <p className="visible mx-0 mt-3 mb-0 text-sm leading-relaxed text-left text-slate-700 text-center lg:text-left">
+              <p className="visible mx-0 mt-3 mb-0 text-sm leading-relaxed text-slate-700 text-center lg:text-left">
                 <Typewriter
                   onInit={(typewriter) => {
                     typewriter
