@@ -5,12 +5,6 @@ const iconPath = '/abimages/';
 function Competitions() {
     const efx = [
         {
-            name: 'ASME IAM3D Drone Competition',
-            brief: 'Team Mavericks ',
-            desc: 'ASME NSUT’s Team Mavericks participated in the ASME Innovative Additive Manufacturing 3D (IAM3D) Competition during ASME EFx 2025, held at Reva University, Bangalore. The challenge tasked student teams to design and manufacture an Unmanned Aerial Racing Cargo Vehicle (U.A.R.C.V.) using additive manufacturing and an iterative design process . The vehicle had to race through an obstacle course while picking up and delivering payloads each lap, testing both innovation and engineering skills With their innovative design and exceptional performance, Team Mavericks secured an impressive All India Rank (AIR) 7, underscoring ASME NSUT’s spirit of innovation, technical excellence , and problem-solving on a national platform',
-            logo: iconPath + 'iam3d_logo.png',
-        },
-        {
             name: 'ASME Elevator Pitch Competition',
             brief: '',
             desc: 'During ASME India EFx, ASME NSUT participated in the Elevator Pitch Competition, where participants had to deliver concise and persuasive speeches to spark interest in their ideas. Representing the society, Aman Malhotra showcased outstanding communication and presentation skills, securing 3rd position and highlighting the team’s ability to convey impactful ideas with clarity and confidence.',
@@ -21,6 +15,12 @@ function Competitions() {
             brief: '',
             desc: 'Oral Competition at EFx India 2025 was a platform where participants showcased their innovative ideas, research, and projects through impactful speeches and presentations . ASME NSUT actively participated in the competition, demonstrating clarity, creativity , and technical depth, while proudly representing NSUT at the national stage.',
             logo: iconPath + 'oral_comp_logo.png',
+        },
+        {
+            name: 'ASME IAM3D Drone Competition',
+            brief: 'Team Mavericks ',
+            desc: 'ASME NSUT’s Team Mavericks participated in the ASME Innovative Additive Manufacturing 3D (IAM3D) Competition during ASME EFx 2025, held at Reva University, Bangalore. The challenge tasked student teams to design and manufacture an Unmanned Aerial Racing Cargo Vehicle (U.A.R.C.V.) using additive manufacturing and an iterative design process. The vehicle had to race through an obstacle course while picking up and delivering payloads each lap, testing both innovation and engineering skills. With their innovative design and exceptional performance, Team Mavericks secured an impressive All India Rank (AIR) 7, underscoring ASME NSUT’s spirit of innovation, technical excellence , and problem-solving on a National platform.',
+            logo: iconPath + 'iam3d_logo.png',
         },
     ]
     const efest = [
@@ -78,8 +78,8 @@ function Competitions() {
 
                 <div className="container flex flex-col space-y-12 mx-auto">
                     <div className="container flex flex-col space-y-12 mx-auto">
-                        <h2 className="text-center text-3xl uppercase font-poppins text-[#0C397D] tracking-wide">
-                            ASME India EFx 2025
+                        <h2 className="text-center text-3xl font-poppins text-[#0C397D] tracking-wide">
+                            ASME INDIA EFx 2025
                         </h2>
                         <div className="flex flex-wrap justify-center">
                             {efx.map((compevent) => (
@@ -88,8 +88,8 @@ function Competitions() {
                         </div>
                     </div>
                     <div className="container flex flex-col space-y-12 mx-auto">
-                        <h2 className="text-center text-3xl uppercase font-poppins text-[#0C397D] tracking-wide">
-                            ASME E-Fest Tech Connect 2025
+                        <h2 className="text-center text-3xl font-poppins text-[#0C397D] tracking-wide">
+                            ASME E-FEST TECH CONNECT 2025
                         </h2>
                         <div className="flex flex-wrap justify-center">
                             {efest.map((compevent) => (
