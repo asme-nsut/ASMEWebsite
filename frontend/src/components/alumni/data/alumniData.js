@@ -11,7 +11,7 @@ export const batchdata2023 = [
     },
     {
       name: 'Vandit Bawa',
-      por: 'Vice-Chair',
+      por: 'Vice-Chairperson',
       img: iconPath+'Vandit.jpg',
       insta:'https://www.instagram.com/vandit_bawa/',
       linkedin:'https://www.linkedin.com/in/vandit-bawa/'
