@@ -5,6 +5,12 @@ const iconPath = '/abimages/';
 function Competitions() {
     const efx = [
         {
+            name: 'ASME IAM3D Drone Competition',
+            brief: 'Team Mavericks ',
+            desc: 'Team Mavericks from ASME NSUT participated in the ASME Innovative Additive Manufacturing 3D (IAM3D) Competition at EFx 2025, Reva University, Bangalore. Tasked with designing and 3D-printing an Unmanned Aerial Racing Cargo Vehicle (U.A.R.C.V.) to race through obstacles while delivering payloads, the team showcased innovation and technical skill, securing an impressive All India Rank 7.',
+            logo: iconPath + 'iam3d_logo.png',
+        },
+        {
             name: 'ASME Elevator Pitch Competition',
             brief: '',
             desc: 'During ASME India EFx, ASME NSUT participated in the Elevator Pitch Competition, where participants had to deliver concise and persuasive speeches to spark interest in their ideas. Representing the society, Aman Malhotra showcased outstanding communication and presentation skills, securing 3rd position and highlighting the team’s ability to convey impactful ideas with clarity and confidence.',
@@ -15,12 +21,6 @@ function Competitions() {
             brief: '',
             desc: 'Oral Competition at EFx India 2025 was a platform where participants showcased their innovative ideas, research, and projects through impactful speeches and presentations . ASME NSUT actively participated in the competition, demonstrating clarity, creativity , and technical depth, while proudly representing NSUT at the national stage.',
             logo: iconPath + 'oral_comp_logo.png',
-        },
-        {
-            name: 'ASME IAM3D Drone Competition',
-            brief: 'Team Mavericks ',
-            desc: 'ASME NSUT’s Team Mavericks participated in the ASME Innovative Additive Manufacturing 3D (IAM3D) Competition during ASME EFx 2025, held at Reva University, Bangalore. The challenge tasked student teams to design and manufacture an Unmanned Aerial Racing Cargo Vehicle (U.A.R.C.V.) using additive manufacturing and an iterative design process. The vehicle had to race through an obstacle course while picking up and delivering payloads each lap, testing both innovation and engineering skills. With their innovative design and exceptional performance, Team Mavericks secured an impressive All India Rank (AIR) 7, underscoring ASME NSUT’s spirit of innovation, technical excellence , and problem-solving on a National platform.',
-            logo: iconPath + 'iam3d_logo.png',
         },
     ]
     const efest = [
@@ -45,7 +45,7 @@ function Competitions() {
         {
             name: 'ASME Technical Digital Poster Competition',
             brief: '',
-            desc: 'ASME NSUT participated in the Old Guard Technical Digital Poster Competition at ASME E-Fest Tech Connect 2025, showcasing innovative technical ideas through clear and visually engaging posters. The team highlighted creativity, engineering knowledge , and effective communication while representing ASME NSUT on the national stage.',
+            desc: 'ASME NSUT participated in the Old Guard Technical Digital Poster Competition at ASME E-Fest Tech Connect 2025, showcasing innovative technical ideas through clear and visually engaging posters. The team highlighted creativity, engineering knowledge , and effective communication.',
             logo: iconPath + 'OldGuardPosterComp_logo.png',
         },
     ]
@@ -61,9 +61,14 @@ function Competitions() {
         {
             name: 'ASME IAM3D Hovercraft Competition',
             brief: 'Team Ampere',
-            desc: 'Team Ampere from ASME NSUT participated in the ASME IAM3D Hovercraft Competition 2023, leveraging additive manufacturing technologies to design and build an innovative hovercraft. The challenge provided a platform to re-engineer and apply creative design principles, where the team showcased their technical expertise, creativity, and problem-solving skills through cutting-edge 3D printing applications.',
+            desc: 'Team Ampere from ASME NSUT participated in the ASME IAM3D Hovercraft Competition 2023, leveraging additive manufacturing technologies to design and build an innovative hovercraft. The challenge provided a platform to re-engineer and apply creative design principles, where the team showcased their technical expertise.',
             logo: iconPath + 'IAM3D_Hovercraft_logo.png',
-        }
+        },
+        {
+            name: 'Student Design Competition 2023',
+            desc: 'ASME NSUT participated in the 2023 Student Design Competition (SDC) themed “Harvesting the Sun and Wind Again.” The challenge required teams to design and build a remotely controlled vehicle capable of collecting renewable solar and wind energy while moving weights across a game surface. Our team showcased innovation, technical skills, and teamwork.',
+            logo: iconPath + 'ASME_SDC_logo.png',
+        },
     ];
 
     return (
