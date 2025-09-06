@@ -50,9 +50,25 @@ function Competitions() {
         },
     ]
 
+    // *Past Participation Highlights*
+    const past_competitions = [
+        {
+            name: 'ASME e-HPVC Competition',
+            brief: 'Team Falcon',
+            desc: 'Team Falcon from ASME NSUT participated in the prestigious ASME e-HPVC (Electric Human Powered Vehicle Challenge) 2023, an international engineering design competition that began in 1983. The team designed and innovated a sustainable human-powered vehicle, showcasing speed, endurance, and safety, and secured an impressive All India Rank (AIR) 9 on the national platform.',
+            logo: iconPath + 'e-HPVC_logo.jpeg',
+        },
+        {
+            name: 'ASME IAM3D Hovercraft Competition',
+            brief: 'Team Ampere',
+            desc: 'Team Ampere from ASME NSUT participated in the ASME IAM3D Hovercraft Competition 2023, leveraging additive manufacturing technologies to design and build an innovative hovercraft. The challenge provided a platform to re-engineer and apply creative design principles, where the team showcased their technical expertise, creativity, and problem-solving skills through cutting-edge 3D printing applications.',
+            logo: iconPath + 'IAM3D_Hovercraft_logo.png',
+        }
+    ];
+
     return (
         <div>
-            <section className="text-gray-600 body-font">
+            <section className="text-gray-600 body-font mb-10">
                 <div className="text-center my-10 flex flex-col space-y-4">
                     <h1 className="text-7xl font-semibold text-gray-900">Competitions</h1>
                     <div className="flex justify-center">
@@ -60,25 +76,36 @@ function Competitions() {
                     </div>
                 </div>
 
-                <div className="container px-5 py-24 mx-auto">
-                    <h2 className="text-center pb-5 text-3xl font-black mb-8 font-poppins text-[#0C397D] tracking-wide">
-                        ASME India EFx 2025
-                    </h2>
-                    <div className="flex flex-wrap -mx-4 -my-8 justify-center">
-                        {efx.map((compevent) => (
-                            <CompetitionDiv competition={compevent} />
-                        ))}
+                <div className="container flex flex-col space-y-12 mx-auto">
+                    <div className="container flex flex-col space-y-12 mx-auto">
+                        <h2 className="text-center text-3xl uppercase font-poppins text-[#0C397D] tracking-wide">
+                            ASME India EFx 2025
+                        </h2>
+                        <div className="flex flex-wrap justify-center">
+                            {efx.map((compevent) => (
+                                <CompetitionDiv competition={compevent} />
+                            ))}
+                        </div>
                     </div>
-                </div>
-                <div className="container px-5 py-24 mx-auto">
-                    <h2 className="text-center pb-5 text-3xl font-black mb-8 font-poppins text-[#0C397D] tracking-wide">
-                        ASME E-Fest Tech Connect 2025
-                    </h2>
-
-                    <div className="flex flex-wrap -mx-4 -my-8 justify-center">
-                        {efest.map((compevent) => (
-                            <CompetitionDiv competition={compevent} />
-                        ))}
+                    <div className="container flex flex-col space-y-12 mx-auto">
+                        <h2 className="text-center text-3xl uppercase font-poppins text-[#0C397D] tracking-wide">
+                            ASME E-Fest Tech Connect 2025
+                        </h2>
+                        <div className="flex flex-wrap justify-center">
+                            {efest.map((compevent) => (
+                                <CompetitionDiv competition={compevent} />
+                            ))}
+                        </div>
+                    </div>
+                    <div className="container flex flex-col space-y-12 mx-auto">
+                        <h2 className="text-center text-3xl uppercase font-poppins text-[#0C397D] tracking-wide">
+                            Past Participation Highlights
+                        </h2>
+                        <div className="flex flex-wrap justify-center">
+                            {past_competitions.map((compevent) => (
+                                <CompetitionDiv competition={compevent} />
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>
