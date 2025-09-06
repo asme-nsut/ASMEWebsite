@@ -3,17 +3,17 @@ import AOS from 'aos';
 // import 'aos/dist/aos.css';
 
 function FacultyDiv({ items, facultyId }) {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-    AOS.refresh();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000,
+  //     once: true,
+  //   });
+  //   AOS.refresh();
+  // }, []);
 
   const aligntext = (facultyId % 2 === 0) ? (
     <div
-      data-aos="fade-right"
+      // data-aos="fade-right"
       className="h-auto flex lg:flex-row overflow-hidden flex-col items-center sm:justify-start justify-center text-left rounded-[50px] shadow-[5px_5px_20px_5px_#e2e8f0]"
     >
       <img
@@ -29,7 +29,7 @@ function FacultyDiv({ items, facultyId }) {
     </div>
   ) : (
     <div
-      data-aos="fade-left"
+      // data-aos="fade-left"
       className="h-auto flex lg:flex-row-reverse flex-col overflow-hidden items-center sm:justify-start justify-center text-left lg:text-right rounded-[50px] shadow-[-5px_5px_20px_5px_#e2e8f0]"
     >
       <img
