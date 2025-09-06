@@ -16,9 +16,18 @@ export default function Alumni() {
                             </div>
                         </div>
 
+                        <div className="flex flex-col text-center w-full mb-12 mt-20">
+                            <h1 className="text-3xl title-font mb-2 text-gray-900 uppercase font-poppins">Batch of 2024</h1>
+                        </div>
+                        <div className="flex flex-wrap justify-center lg:m-4 sm:m-1">
+                            {batchdata2024.map((alumnus, index) => (
+                                <AlumniCard key={index} details={alumnus} />
+                            ))}
+                        </div>
+
                         {/* Section for Batch of 2023 */}
                         <div className="flex flex-col text-center w-full mb-12">
-                            <h1 className="text-3xl title-font mb-2 text-gray-900 font-poppins font-black">Batch of 2023</h1>
+                            <h1 className="text-3xl title-font mb-2 text-gray-900 uppercase font-poppins">Batch of 2023</h1>
                         </div>
                         <div className="flex flex-wrap justify-center lg:m-4 sm:m-1">
                             {batchdata2023.map((alumnus, index) => (
@@ -26,14 +35,6 @@ export default function Alumni() {
                             ))}
                         </div>
 
-                        <div className="flex flex-col text-center w-full mb-12 mt-20">
-                            <h1 className="text-3xl title-font mb-2 text-gray-900 font-poppins font-black">Batch of 2024</h1>
-                        </div>
-                        <div className="flex flex-wrap justify-center lg:m-4 sm:m-1">
-                            {batchdata2024.map((alumnus, index) => (
-                                <AlumniCard key={index} details={alumnus} />
-                            ))}
-                        </div>
 
                     </div>
                 </div>
