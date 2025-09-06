@@ -27,7 +27,7 @@ function Event() {
                 },
                 {
                     name: 'Green Business Pitch',
-                    desc: 'Green Business Pitch was an ideathon competition organised by ASME NSUT aligned with the Sustainable Development Goals, where participants presented their business ideas to a panel of judges. The event featured engaging presentations and an interactive Q&A session, encouraging creativity, collaboration, and awareness of sustainable business practices.',
+                    desc: 'Green Business Pitch was an ideathon competition organised by ASME NSUT aligned with the Sustainable Development Goals, where participants presented their business ideas to a panel of judges. The event featured engaging presentations and an interactive Q&A session.',
                     logo: iconPath + images[1],
                 },
                 {
