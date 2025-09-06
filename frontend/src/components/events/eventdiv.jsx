@@ -2,7 +2,7 @@ function eventDiv({ event }) {
     return (
         <>
             <div class="lg:w-[45%] m-3 shadow-[4px_6px_16px_3px_#00000024] rounded-[25px]" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-                <div class="flex flex-col items-start space-y-4 sm:space-y-0 sm:flex-row p-6 sm:space-x-7">
+                <div class="flex flex-col items-center space-y-4 sm:space-y-0 sm:flex-row p-6 sm:space-x-7">
                     <div class="flex-shrink-0 sm:h-[200px] sm:w-[200px] rounded-[5px] object-contain overflow-hidden">
                         <img alt={event.logo} src={event.logo} />
                     </div>
