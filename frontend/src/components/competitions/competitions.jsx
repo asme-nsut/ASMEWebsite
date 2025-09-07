@@ -19,7 +19,7 @@ function Competitions() {
         {
             name: 'ASME Oral Competition',
             brief: '',
-            desc: 'Oral Competition at EFx India 2025 was a platform where participants showcased their innovative ideas, research, and projects through impactful speeches and presentations . ASME NSUT actively participated in the competition, demonstrating clarity, creativity , and technical depth, while proudly representing NSUT at the national stage.',
+            desc: 'Oral Competition at EFx India 2025 was a platform where participants showcased their innovative ideas, research, and projects through impactful speeches and presentations . ASME NSUT actively participated in the competition, demonstrating clarity, creativity , and technical depth, while proudly representing NSUT at the National stage.',
             logo: iconPath + 'oral_comp_logo.png',
         },
     ]
@@ -37,9 +37,9 @@ function Competitions() {
             logo: iconPath + 'xrc_lunar_lander_logo.png',
         },
         {
-            name: 'E-Fest Scavenger Hunt',
+            name: 'ASME E-Fest Scavenger Hunt',
             brief: '',
-            desc: 'ASME NSUT students enthusiastically participated in the Scavenger Hunt at ASME E-Fest 2025, a fun and interactive challenge designed to test teamwork, problem -solving, and quick thinking. The fostered collaboration, creativity, and the spirit of networking in a high-energy environment.',
+            desc: 'ASME NSUT students enthusiastically participated in the Scavenger Hunt at ASME E-Fest 2025, a fun and interactive challenge designed to test teamwork, problem -solving, and quick thinking. This fostered collaboration, creativity, and the spirit of networking in a high-energy environment.',
             logo: iconPath + 'scavenger_hunt logo.png',
         },
         {
@@ -65,7 +65,7 @@ function Competitions() {
             logo: iconPath + 'IAM3D_Hovercraft_logo.png',
         },
         {
-            name: 'Student Design Competition 2023',
+            name: 'ASME Student Design Competition',
             desc: 'ASME NSUT participated in the 2023 Student Design Competition (SDC) themed “Harvesting the Sun and Wind Again.” The challenge required teams to design and build a remotely controlled vehicle capable of collecting renewable solar and wind energy while moving weights across a game surface. Our team showcased innovation, technical skills, and teamwork.',
             logo: iconPath + 'ASME_SDC_logo.png',
         },

@@ -143,7 +143,7 @@ function Home() {
                 <p className="leading-relaxed text-base">
                   Our aim at ASME NSUT is to build a community of engineers and
                   help them to engineer their future by building skills and
-                  making connections. We here aim to enlighten students with
+                  making connections. We aim to enlighten students with
                   the practical applications of concepts taught in a classroom
                   through amazing projects, events and competitions to broaden
                   their horizons across various disciplines. ASME NSUT strongly
@@ -171,7 +171,7 @@ function Home() {
                   OUR WORK ETHICS
                 </h2>
                 <p className="leading-relaxed text-base">
-                  We have a stern belief in maintaining a healthy work ethics
+                  We have a stern belief in maintaining healthy work ethics
                   with a zeal to work hard and passion for what we do. There is
                   space for people’s curiosity, to learn, as this eagerness is
                   what differentiates us as humans. We strive to make people’s
