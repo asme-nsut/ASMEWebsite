@@ -19,7 +19,7 @@ function Competitions() {
         {
             name: 'ASME Oral Competition',
             brief: '',
-            desc: 'Oral Competition at EFx India 2025 was a platform where participants showcased their innovative ideas, research, and projects through impactful speeches and presentations . ASME NSUT actively participated in the competition, demonstrating clarity, creativity , and technical depth, while proudly representing NSUT at the National stage.',
+            desc: 'Oral Competition at EFx India 2025 was a platform where participants showcased their innovative ideas, research, and projects through impactful speeches and presentations. ASME NSUT actively participated in the competition, demonstrating clarity, creativity, and technical depth, while proudly representing NSUT at the National stage.',
             logo: iconPath + 'oral_comp_logo.png',
         },
     ]
