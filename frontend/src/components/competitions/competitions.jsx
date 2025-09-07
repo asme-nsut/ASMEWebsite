@@ -39,13 +39,13 @@ function Competitions() {
         {
             name: 'ASME E-Fest Scavenger Hunt',
             brief: '',
-            desc: 'ASME NSUT students enthusiastically participated in the Scavenger Hunt at ASME E-Fest 2025, a fun and interactive challenge designed to test teamwork, problem -solving, and quick thinking. This fostered collaboration, creativity, and the spirit of networking in a high-energy environment.',
+            desc: 'ASME NSUT students enthusiastically participated in the Scavenger Hunt at ASME E-Fest 2025, a fun and interactive challenge designed to test teamwork, problem-solving, and quick thinking. This fostered collaboration, creativity, and the spirit of networking in a high-energy environment.',
             logo: iconPath + 'scavenger_hunt logo.png',
         },
         {
             name: 'ASME Technical Digital Poster Competition',
             brief: '',
-            desc: 'ASME NSUT participated in the Old Guard Technical Digital Poster Competition at ASME E-Fest Tech Connect 2025, showcasing innovative technical ideas through clear and visually engaging posters. The team highlighted creativity, engineering knowledge , and effective communication.',
+            desc: 'ASME NSUT participated in the Old Guard Technical Digital Poster Competition at ASME E-Fest Tech Connect 2025, showcasing innovative technical ideas through clear and visually engaging posters. The team highlighted creativity, engineering knowledge, and effective communication.',
             logo: iconPath + 'OldGuardPosterComp_logo.png',
         },
     ]
