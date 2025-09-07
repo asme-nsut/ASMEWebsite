@@ -96,7 +96,6 @@ const ASMEgallery = () => {
                 { img: "/GalleryImages/2024/2024_gallery_28.jpg" },
                 { img: "/GalleryImages/2024/2024_gallery_29.jpg" },
                 { img: "/GalleryImages/2024/2024_gallery_30.jpg" },
-                // { img: "/GalleryImages/2024/2024_gallery_31.jpg" },
                 { img: "/GalleryImages/2024/2024_gallery_32.jpg" },
                 { img: "/GalleryImages/2024/2024_gallery_33.jpg" },
 
