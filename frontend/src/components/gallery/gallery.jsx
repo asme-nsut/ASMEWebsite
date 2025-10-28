@@ -6,6 +6,63 @@ const ASMEgallery = () => {
     const galleryImagesByYear = useMemo(
         () => ({
             2025: [
+                
+                
+                
+               
+               
+                
+                
+                
+                
+                
+                { img: "/GalleryImages/2025/2025_STC_3.jpg" },
+                { img: "/GalleryImages/2025/2025_STC_7.jpg" },
+                { img: "/GalleryImages/2025/2025_STC_9.jpg" },
+                { img: "/GalleryImages/2025/2025_STC_11.jpg" },
+                { img: "/GalleryImages/2025/2025_STC_16.jpg" },
+                { img: "/GalleryImages/2025/2025_STC_17.jpg" },
+                { img: "/GalleryImages/2025/2025_STC_1.jpg" },
+                { img: "/GalleryImages/2025/2025_STC_2.jpg" },
+                { img: "/GalleryImages/2025/2025_STC_4.jpg" },
+                { img: "/GalleryImages/2025/2025_STC_5.jpg" },
+                { img: "/GalleryImages/2025/2025_STC_6.jpg" },
+                { img: "/GalleryImages/2025/2025_STC_8.jpg" },
+                { img: "/GalleryImages/2025/2025_STC_10.jpg" },
+                { img: "/GalleryImages/2025/2025_STC_12.jpg" },
+                { img: "/GalleryImages/2025/2025_STC_13.jpg" },
+                { img: "/GalleryImages/2025/2025_STC_14.jpg" },
+                { img: "/GalleryImages/2025/2025_STC_15.jpg" },
+                { img: "/GalleryImages/2025/2025_TGC_4.jpg" },
+                 { img: "/GalleryImages/2025/2025_TGC_1.jpg" },
+                { img: "/GalleryImages/2025/2025_TGC_2.jpg" },
+                { img: "/GalleryImages/2025/2025_TGC_3.jpg" },
+                { img: "/GalleryImages/2025/2025_TGC_8.jpg" },
+                { img: "/GalleryImages/2025/2025_TGC_5.jpg" },
+                { img: "/GalleryImages/2025/2025_TGC_6.jpg" },
+                { img: "/GalleryImages/2025/2025_TGC_7.jpg" },
+                { img: "/GalleryImages/2025/2025_TGC_9.jpg" },
+                { img: "/GalleryImages/2025/2025_TGC_10.jpg" },
+                { img: "/GalleryImages/2025/2025_TGC_11.jpg" },
+                { img: "/GalleryImages/2025/2025_TGC_12.jpg" },
+                { img: "/GalleryImages/2025/2025_WIE_1.png" },
+                { img: "/GalleryImages/2025/2025_WIE_3.jpg" },
+                { img: "/GalleryImages/2025/2025_WIE_2.jpg" },
+                { img: "/GalleryImages/2025/2025_WIE_4.jpg" },
+                { img: "/GalleryImages/2025/2025_WIE_5.jpg" },
+                { img: "/GalleryImages/2025/2025_WIE_6.jpg" },
+                { img: "/GalleryImages/2025/2025_WIE_7.png" },
+                { img: "/GalleryImages/2025/2025_WIE_8.png" },
+                { img: "/GalleryImages/2025/2025_c2c_ep1_1.png" },
+                { img: "/GalleryImages/2025/2025_c2c_ep1_2.png" },
+                { img: "/GalleryImages/2025/2025_induction_1.jpg" },
+                { img: "/GalleryImages/2025/2025_induction_3.jpg" },
+                { img: "/GalleryImages/2025/2025_induction_2.jpg" },
+                { img: "/GalleryImages/2025/2025_induction_4.jpg" },
+                { img: "/GalleryImages/2025/2025_induction_5.jpg" },
+                { img: "/GalleryImages/2025/2025_orientation_group_pic.jpg" },
+                { img: "/GalleryImages/2025/2025_orientation pic add.jpg" },
+                { img: "/GalleryImages/2025/2025_orientation pic ayush.jpg" },
                 { img: "/GalleryImages/2025/2025_gallery_1.jpg" },
                 { img: "/GalleryImages/2025/2025_gallery_2.jpg" },
                 { img: "/GalleryImages/2025/2025_gallery_3.jpg" },
@@ -13,9 +70,13 @@ const ASMEgallery = () => {
                 { img: "/GalleryImages/2025/2025_gallery_5.jpg" },
                 { img: "/GalleryImages/2025/2025_gallery_6.jpg" },
                 { img: "/GalleryImages/2025/2025_gallery_7.jpg" },
+                { img: "/GalleryImages/2025/2025_ASME_NSUT_student_leaders.jpg" },
                 { img: "/GalleryImages/2025/2025_gallery_8.jpg" },
                 { img: "/GalleryImages/2025/2025_gallery_9.jpg" },
+                { img: "/GalleryImages/2025/2025_cad_battle_pic.jpg" },
+                { img: "/GalleryImages/2025/2025_efx award pic add.jpg" },
                 { img: "/GalleryImages/2025/2025_gallery_10.jpg" },
+                
                 { img: "/GalleryImages/2025/2025_gallery_11.jpg" },
                 { img: "/GalleryImages/2025/2025_gallery_12.jpg" },
                 { img: "/GalleryImages/2025/2025_gallery_13.jpg" },
@@ -102,6 +163,7 @@ const ASMEgallery = () => {
 
             ],
             2023: [
+                {img: "/GalleryImages/2023/2023_hovercraft pic.jpg"},
                 { img: "/GalleryImages/2023/2023_gallery_1.jpg" },
                 { img: "/GalleryImages/2023/2023_gallery_2.jpg" },
                 { img: "/GalleryImages/2023/2023_gallery_3.jpg" },

@@ -15,7 +15,7 @@ function about() {
         },
         {
             name: 'Prof. D K Singh',
-            por: 'Patron ASME NSUT',
+            por: 'Patron, ASME NSUT',
             desc: 'I feel immense pride to announce the establishment of the ASME student chapter at NSUT. I really appreciate the work ASME student chapter at NSUT puts into work and with this welcome you all. Through my experience, in the mechanical engineering field, I see the ASME student section as a valuable resource for students to get involved in the mechanical engineering community, gain hands-on experience and networking opportunities, and develop leadership skills. Also  the opportunities for collaboration and outreach that an ASME student section can provide is highly appreciable.',
             img: iconPath + 'dks.jpg'
         },
@@ -181,7 +181,7 @@ function about() {
                     </div>
                     <div id="student" class="container px-5 py-4 mx-auto ">
                         <div id='faculty' class="flex flex-col text-left w-full mx-24 mb-12">
-                            <h1 class="text-4xl title-font mb-4 uppercase text-gray-900 tracking-widest">Student team</h1>
+                            <h1 class="text-4xl title-font mb-4 uppercase text-gray-900 tracking-widest">ASME NSUT STUDENT LEADERS</h1>
                         </div>
                         <div class="flex flex-wrap justify-center lg:m-4 sm:m-1 ">
                             {student}

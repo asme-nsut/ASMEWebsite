@@ -81,7 +81,68 @@ function Home() {
           </div>
         </section>
       </main>
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+              ASME NSUT HAS RECEIVED THE FOLLOWING AWARDS UNDER THE ASME INDIA STUDENT SECTION RECOGNITION PROGRAM 
+            </h1>
+          </div>
 
+          <div className="flex flex-wrap -m-4 lg:justify-center ">
+            <div className="xl:w-1/3 md:w-1/2 p-4">
+              <div className="border border-gray-200 p-6 rounded-lg min-h-full">
+                <div className="awards">
+                  <div style={{ textAlign: "center" }}>
+                <img src="2025_student community.png" />
+                </div>
+                </div>
+                <h2 
+                  style={{textAlign: "center"}}
+                  className="text-lg text-gray-900 font-medium title-font mb-2">
+                  Outstanding Community Engagement 2025
+                </h2>
+                
+              </div>
+            </div>
+
+            <div className="xl:w-1/3 md:w-1/2 p-4">
+              <div className="border border-gray-200 p-6 rounded-lg">
+                <div className="awards">
+                  <div style={{ textAlign: "center" }}>
+                <img src="2024_Community Engagement Award.png" />
+                </div>
+                </div>
+                <h2 
+                  style={{textAlign: "center"}}
+                  className="text-lg text-gray-900 font-medium title-font mb-2">
+                  Outstanding Community Engagement 2024
+                </h2>
+                
+              </div>
+            </div>
+
+            <div className="xl:w-1/3 md:w-1/2 p-4">
+              <div className="border border-gray-200 p-6 rounded-lg">
+                
+                
+                <div style={{ textAlign: "center" }}>
+                <img src="2023_Student Section Achievement Award.png" />
+                </div>
+
+
+                <h2 
+                    style={{textAlign: "center"}}
+                    className="text-lg text-gray-900 font-medium title-font mb-2">
+                  Student Section Achievement 2023
+                </h2>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>            
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
